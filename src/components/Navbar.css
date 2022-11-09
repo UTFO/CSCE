@@ -1,0 +1,18 @@
+#Navbar {
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.navLink {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navLink:hover {
+    color: rgb(118, 118, 118);
+}
+
+#navBrand {
+    padding-right: 5%;
+}
