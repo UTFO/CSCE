@@ -22,44 +22,63 @@ function About() {
 
 
       <h2>&nbsp;Members </h2>
+      <br>
+      </br>
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>President</Card.Title>
+        <Card.Title>Name</Card.Title>
+        <Card.Subtitle>Member</Card.Subtitle>
+
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card style={{ width: '18rem' }}>
+    <br/>
+      <Card style={{ width: '18rem',flex:1. }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Member</Card.Title>
+        <Card.Title>Name</Card.Title>
+        <Card.Subtitle>Member</Card.Subtitle>
+
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
+        <Card.Link href="#">LinkedIn</Card.Link>
+        <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
+    <br/>
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Vice President</Card.Title>
+        <Card.Title>Name</Card.Title>
+        <Card.Subtitle>Member</Card.Subtitle>
+
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
+        <Card.Link href="#">LinkedIn</Card.Link>
+        <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
+    <br/>
+
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Director</Card.Title>
+        <Card.Title>Name</Card.Title>
+        <Card.Subtitle>Member</Card.Subtitle>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
+        <Card.Link href="#">LinkedIn</Card.Link>
+        <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
 
