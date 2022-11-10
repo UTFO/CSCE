@@ -9,7 +9,6 @@ import Events from './pages/Events';
 import Mentorship from './pages/Mentorship';
 
 function App() {
-  console.log('hi')
   return (
     <BrowserRouter>
       <Routes>
