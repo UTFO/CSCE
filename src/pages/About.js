@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 //const About = () => {
   //  return (
@@ -24,6 +25,7 @@ function About() {
       <h2>&nbsp;Members </h2>
       <br>
       </br>
+      <CardGroup>
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
@@ -68,6 +70,8 @@ function About() {
         <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
+      </CardGroup>
+      
     <br/>
 
       <Card style={{ width: '18rem' }}>
