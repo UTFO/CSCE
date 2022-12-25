@@ -1,7 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import CardGroup from 'react-bootstrap/CardGroup';
-
+import Row from "react-bootstrap/Row";
+import Col from 'react-bootstrap/Col';
+import { Container } from 'react-bootstrap';
 //const About = () => {
   //  return (
   //      <h1>This is the about page</h1>
@@ -22,11 +24,15 @@ function About() {
       <br/>
 
 
-      <h2>&nbsp;Members </h2>
+      <h2 >&nbsp; Our team </h2>
       <br>
       </br>
-      <CardGroup>
-      <Card style={{ width: '18rem' }}>
+      <Container>
+      <Row xs={2} md={2} className="g-4">
+        {Array.from({length:6}).map((_,idx)=>(
+        <Col>
+
+        <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Name</Card.Title>
@@ -40,57 +46,13 @@ function About() {
         <Card.Link href="#">GitHub</Card.Link>
       </Card.Body>
     </Card>
-    <br/>
-      <Card style={{ width: '18rem',flex:1. }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Name</Card.Title>
-        <Card.Subtitle>Member</Card.Subtitle>
-
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">LinkedIn</Card.Link>
-        <Card.Link href="#">GitHub</Card.Link>
-      </Card.Body>
-    </Card>
-    <br/>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Name</Card.Title>
-        <Card.Subtitle>Member</Card.Subtitle>
-
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">LinkedIn</Card.Link>
-        <Card.Link href="#">GitHub</Card.Link>
-      </Card.Body>
-    </Card>
-      </CardGroup>
+        </Col>
+        ))}
+      </Row>
+      </Container>
       
-    <br/>
-
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Name</Card.Title>
-        <Card.Subtitle>Member</Card.Subtitle>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">LinkedIn</Card.Link>
-        <Card.Link href="#">GitHub</Card.Link>
-      </Card.Body>
-    </Card>
-
-
-      <h3> Address</h3>
-
+      
+      
 
     </div>
   );
