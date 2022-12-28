@@ -15,26 +15,27 @@ function About() {
  
   return (
     <div className="background">
-      <br>
-      </br>
+      <br/>      
+      <img   className="center" style={{ width: "25%", height: "25%" }} src="https://scontent.fyyz1-2.fna.fbcdn.net/v/t39.30808-6/243755651_361430918858134_4228657768685031891_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gaY3JYK2wiwAX8dwHmd&tn=iWamYZP-4P1nk8WD&_nc_ht=scontent.fyyz1-2.fna&oh=00_AfC3hes3VmGblW5yNkxEFKx4eMNFrvoG7QbEU5_U9IN72w&oe=63B0CC8B"/>
+
         <h1 className="titles">
           About us 
-          </h1>
+        </h1>
 
-        <h3 className="titles"> The Canadian Society of Civil Engineers at the University of Toronto is an organization aiming to <br/> say gather together 
-        
+        <h3 className="titles"> The Canadian Society of Civil Engineers at the University of Toronto is an organization aiming to <br/> say gather together         
         civil engineers across Toronto. Our aim is to sigma alpha gama beta sigma lol </h3>
         
       <br/>
       <br/>
 
-
       <h2 className="titles"> Meet The Team </h2>
+
       <br>
       </br>
+      
       <article className="article_background">
       <Container>
-      <Row xs={2} md={2} className="g-4">
+      <Row xs={3} md={3} className="g-4">
         {Array.from({length:6}).map((_,idx)=>(
         <Col>
 
