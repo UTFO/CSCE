@@ -21,3 +21,9 @@
     width: 50%;
     
   }
+
+.section{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
