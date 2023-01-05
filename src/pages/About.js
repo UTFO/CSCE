@@ -20,7 +20,7 @@ function About() {
         <h3 className="titles"> 
         We are a networking club for civil engineering students. 
         We help students discover different career paths by connecting students to mentors in the industry,
-         hosting panels about different fields in civil engineering, hold skills workshops, and help run career fair.
+         hosting panels about different fields in civil engineering, hold skills workshops, and help run career fair
         </h3>
         
       <br/>
@@ -36,8 +36,8 @@ function About() {
     {Users.map((users)=>
         <Container className="section">
 
-            <Card style={{ width: '18rem' }}>
-             <Card.Img style={{ width: 286, height: 300 }} variant="top" src={users.photo}/>
+            <Card style={{ width: '17rem' }}>
+             <Card.Img style={{ width: 270, height: 300 }} variant="top" src={users.photo}/>
             <Card.Body>
             <Card.Title>{users.name}</Card.Title>
             <Card.Subtitle>{users.title}</Card.Subtitle>
@@ -52,22 +52,25 @@ function About() {
 
             </Card.Link>
           </Card.Body>
+          <br></br>
+
         </Card>
   </Container>
     )}
   </div>
-
-      <h1 className="titles">
+      <br></br>
+      <h2 className="titles">
       
     For more information about our events, follow us in social media !
 
-      </h1>
+      </h2>
 
       <div className="titles">
       <a href="https://www.instagram.com/csce.uoft/?hl=en">
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style={{ width: "5%", height: "5%" }}/>
       </a >
       
+      <p> &nbsp;</p>
 
       <a href="https://www.facebook.com/CSCEUofT/">
       <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" style={{ width: "4.7%", height: "4.7%" }}/>
