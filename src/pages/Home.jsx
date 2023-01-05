@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <h1>This is the events page</h1>
+        <h1>This is the home page</h1>
       </div>
       <div className="EventHolder">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>

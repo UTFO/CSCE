@@ -15,17 +15,6 @@ import {
 import PropTypes from 'prop-types';
 import './EventCard.css';
 
-
-EventCard.propTypes = {
-  eventName: PropTypes.string,
-  eventDate: PropTypes.string,
-  eventLocation: PropTypes.string,
-  eventAddress: PropTypes.string,
-  eventDescription: PropTypes.string,
-  eventTypes: PropTypes.array,
-  eventRegisterLink: PropTypes.string 
-}
-
 const EventCard = ({
   eventName,
   eventDate,
@@ -158,5 +147,15 @@ const EventCard = ({
     </Card>
   );
 };
+
+EventCard.propTypes = {
+  eventName: PropTypes.string,
+  eventDate: PropTypes.string,
+  eventLocation: PropTypes.string,
+  eventAddress: PropTypes.string,
+  eventDescription: PropTypes.string,
+  eventTypes: PropTypes.array,
+  eventRegisterLink: PropTypes.string 
+}
 
 export default EventCard;
