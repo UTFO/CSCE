@@ -1,0 +1,22 @@
+.EventHolder {
+    border-radius: 50px;
+    width: 80vw;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+.EventHolder:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.EventHolderTitle {
+    color: white;
+}
+
+.CardHolder {
+    padding-top: 3rem;
+}
+
+.BottomCardHolder {
+    padding-bottom: 3rem;
+}

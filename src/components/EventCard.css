@@ -1,0 +1,31 @@
+.customCardClass {
+    max-width: 80%;
+    border-radius: 25px;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.customCardClass:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.iconHolder {
+    padding-right: 0.3em;
+}
+
+.customCardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customIcon:hover {
+    filter: drop-shadow(0 4px 8px rgb(0,0,0,0.2));
+}
+
+.EventCardButton {
+    border-radius: 15px;
+}
+
+.EventCardButton:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
