@@ -11,7 +11,6 @@ import Events from './pages/Events';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Mentorship from './pages/Mentorship';
-import Users from './Users.json';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,21 +25,6 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  const getData = () => {
-    fetch('Users.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-      });
-  };
   return <RouterProvider router={router} />;
 }
 
