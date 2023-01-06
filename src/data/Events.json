@@ -1,0 +1,35 @@
+[
+    {
+        "eventName": "test 1",
+        "eventDate": "Jan 25, 2023",
+        "eventStartTime":"17:00",
+        "eventEndTime":"20:00",
+        "eventLocation": "Benson Building Room 45",
+        "eventAddress": "67 Doe Street",
+        "eventDescription": "Join us on jan 25 to learn about CSCE.",
+        "eventTypes": ["Information Session", "Panel"],
+        "eventRegisterLink":"#"
+    },
+    {
+        "eventName": "test 2",
+        "eventDate": "Jan 27, 2023",
+        "eventStartTime":"9:00",
+        "eventEndTime":"12:00",
+        "eventLocation": "Benson Building Room 45",
+        "eventAddress": "67 Doe Street",
+        "eventDescription": "Join us on jan 25 to learn about CSCE.",
+        "eventTypes": ["Career Fair", "Fundraiser"],
+        "eventRegisterLink":"https://www.google.com/"
+    },
+    {
+        "eventName": "test 3",
+        "eventDate": "Jan 29, 2023",
+        "eventStartTime":"14:00",
+        "eventEndTime":"16:00",
+        "eventLocation": "Benson Building Room 45",
+        "eventAddress": "67 Doe Street",
+        "eventDescription": "Join us on jan 25 to learn about CSCE.",
+        "eventTypes": ["Information Session", "Panel", "Food Provided"],
+        "eventRegisterLink":"https://www.google.com/"
+    }
+]
