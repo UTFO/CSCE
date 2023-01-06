@@ -18,6 +18,8 @@ import './EventCard.css';
 const EventCard = ({
   eventName,
   eventDate,
+  eventStartTime,
+  eventEndTime,
   eventLocation,
   eventAddress,
   eventDescription,
@@ -126,7 +128,7 @@ const EventCard = ({
           <Card.Title>{eventName}</Card.Title>
           <div style={{ display: 'inline-flex' }}>{overlayList}</div>
         </div>
-        <Card.Subtitle className="mb-2 text-muted">{eventDate}</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">{eventDate} | {eventStartTime} - {eventEndTime}</Card.Subtitle>
         <Card.Subtitle className="mb-2 text-muted">
           {eventLocation}
         </Card.Subtitle>
@@ -151,6 +153,8 @@ const EventCard = ({
 EventCard.propTypes = {
   eventName: PropTypes.string,
   eventDate: PropTypes.string,
+  eventEndTime: PropTypes.string,
+  eventStartTime: PropTypes.string,
   eventLocation: PropTypes.string,
   eventAddress: PropTypes.string,
   eventDescription: PropTypes.string,
