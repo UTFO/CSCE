@@ -42,15 +42,6 @@ function About() {
             <Card.Title>{users.name}</Card.Title>
             <Card.Subtitle>{users.title}</Card.Subtitle>
 
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-
-            <Card.Link href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
-            <img src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png" style={{ width: "20%", height: "20%" }}/>
-
-            </Card.Link>
           </Card.Body>
           <br></br>
 
