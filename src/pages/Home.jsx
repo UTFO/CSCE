@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import EventCard from '../components/EventCard';
+import HeroSection from '../components/HeroSection';
 import './Home.css';
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <h1>This is the home page</h1>
+        <HeroSection />
       </div>
       <div className="EventHolder">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>
