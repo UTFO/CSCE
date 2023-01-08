@@ -1,0 +1,101 @@
+
+    [
+        {
+            "id":"1",
+            "title": "Co-President",
+            "name": "Aaditiya Karthik",
+            "photo": "../assets/Aaditya.jpg"
+        
+        }
+        ,{
+            "id":"2",
+            "title": "Co-President",
+            "name": "Adneed Mir",
+            "photo": "../assets/Adneen Mir 2T3.JPEG"
+    
+      
+        },{
+            "id":"3",
+            "title": "VP Logisitics",
+            "name": "Janishan Jeyarajah",
+            "photo": "../assets/Janishan.JPEG"
+    
+      
+        },
+        {
+            "id":"4",
+            "title": "VP Academia",
+            "name": "Angela Abdullahi",
+            "photo": "../assets/Angela Abdullahi 2T3.jpg"
+    
+        },
+        {
+            "id":"5",
+            "title": "Academics/Logistics Associate",
+            "name": "Hoda Eissa",
+            "photo": "../assets/Hoda.JPEG"
+    
+        },
+        {
+            "id":"6",
+            "title": "Mentorship Associate",
+            "name": "Abdullah Muhammad",
+            "photo": "../assets/Linkedin Photo Abdullah M.jpg"
+    
+        },
+        {
+            "id":"7",
+            "title": "Mentorship Associate",
+            "name": "David Qian",
+            "photo": "../assets/David.JPEG"
+        },
+        {
+            "id":"8",
+            "title": "VP Marketing",
+            "name": "Jennifer Sunny",
+            "photo": "../assets/Jennifer.JPEG"
+        },
+        {
+            "id":"9",
+            "title": "Marketing Associate",
+            "name": "Avleen Sindhar",
+            "photo": "../assets/Avleen.jpg"
+        },
+        {
+            "id":"10",
+            "title": "VP Community ",
+            "name": "Sadia Salwao Saika",
+            "photo": "../assets/Saika2.JPG"
+        },
+        {
+            "id":"11",
+            "title": "Community Associate",
+            "name": "Simran Hafiz",
+            "photo": "../assets/Simran2.JPG"
+        },
+        {
+            "id":"12",
+            "title": "First Year Rep",
+            "name": "Yueqi Wang",
+            "photo": "../assets/Yueqi.JPG"
+        },
+        {
+            "id":"13",
+            "title": "Second Year Rep",
+            "name": "Zachary Chisamore",
+            "photo": "../assets/Zachary2.JPG"
+        },
+        {
+            "id":"14",
+            "title": "PEY Consultant",
+            "name": "Meg Sarah Melendres",
+            "photo": "../assets/Meg.JPEG"
+        },
+        {
+            "id":"15",
+            "title": "VP Professional Development",
+            "name": "Asher Syed",
+            "photo": "../assets/Ashar Syed's Headshot.png"
+        }
+        ]
+     
