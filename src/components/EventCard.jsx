@@ -14,6 +14,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import './EventCard.css';
+import '../App.css'
 
 const EventCard = ({
   eventName,
@@ -122,13 +123,13 @@ const EventCard = ({
   );
 
   return (
-    <Card className="customCardClass">
+    <Card className="customCardClass enlarge">
       <Card.Body>
         <div className="customCardHeader">
           <Card.Title>{eventName}</Card.Title>
           <div style={{ display: 'inline-flex' }}>{overlayList}</div>
         </div>
-        <Card.Subtitle className="mb-2 text-muted">{eventDate} | {eventStartTime} - {eventEndTime}</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">{eventDate} | {eventStartTime} - {eventEndTime} EDT</Card.Subtitle>
         <Card.Subtitle className="mb-2 text-muted">
           {eventLocation}
         </Card.Subtitle>

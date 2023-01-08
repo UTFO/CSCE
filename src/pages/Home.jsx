@@ -2,6 +2,7 @@
 import EventCard from '../components/EventCard';
 import Events from '../data/Events.json';
 import './Home.css';
+import '../App.css';
 
 const Home = () => {
   let UpcomingEventCardList = [];
@@ -12,8 +13,23 @@ const Home = () => {
     let upcomingEvents = []
     const currentDate = new Date()
     for (let i = 0; i < eventData.length; i++) {
+      //variable to store time as 24 h
+      let startTime;
+      //convert event start time to 24h format
+      if (eventData[i].eventStartTime.includes("a.m.")) {
+        const index = eventData[i].eventStartTime.indexOf(" ")
+        startTime = eventData[i].eventStartTime.substring(0,index)
+      }
+      else if (eventData[i].eventStartTime.includes("p.m.")) {
+        //convert hour into 24 h format
+        const hour = 12 + parseInt(eventData[i].eventStartTime.substring(0,2))
+        //add converted hour and minutes to full string
+        //i.e "13" + ":30" -> "13:30"
+        const indexOfColon = eventData[i].eventStartTime.indexOf(":")
+        startTime = String(hour) + eventData[i].eventStartTime.substring(indexOfColon, indexOfColon + 2)
+      }
       // convert the data stored in the json file to a javascript date using a date string
-      const dateOfEvent = new Date(eventData[i].eventDate + " " + eventData[i].eventStartTime)
+      const dateOfEvent = new Date(eventData[i].eventDate + " " + startTime)
       //if the event starting date is past the current date, add it to the array of upcoming events
       if (dateOfEvent > currentDate) {
         upcomingEvents.push(eventData[i])
@@ -56,7 +72,7 @@ const Home = () => {
       <div>
         <h1>This is the home page</h1>
       </div>
-      <div className="EventHolder">
+      <div className="EventHolder enlarge">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>
           <h2 className="EventHolderTitle">Upcoming Events</h2>
           <p
