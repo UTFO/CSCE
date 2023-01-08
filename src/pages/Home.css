@@ -1,7 +1,7 @@
 .EventHolder {
     border-radius: 50px;
     width: 80vw;
-    background-color: aqua;
+    background-image: radial-gradient(circle farthest-side at 0 0,white 0%,#008037 100%);
     margin: 0 auto;
 }
 
