@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Events from './pages/Events';
 import Mentorship from './pages/Mentorship';
 import Users from './Users.json'
+import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
 

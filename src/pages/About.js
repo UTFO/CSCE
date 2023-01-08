@@ -6,11 +6,15 @@ import Col from 'react-bootstrap/Col';
 import { Container } from 'react-bootstrap';
 import Users from '../Users.json'
 import "../components/About.css";
+import 'font-awesome/css/font-awesome.min.css';
+import { FaInstagram ,FaFacebook} from "react-icons/fa";
 
 function About() {
  
   return (
+    
     <div className="background">
+      
       <br/>      
 
         <h1 className="titles">
@@ -57,17 +61,17 @@ function About() {
       </h2>
 
       <div className="titles">
-      <a href="https://www.instagram.com/csce.uoft/?hl=en">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style={{ width: "5%", height: "5%" }}/>
-      </a >
-      
-      <p> &nbsp;</p>
 
-      <a href="https://www.facebook.com/CSCEUofT/">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" style={{ width: "4.7%", height: "4.7%" }}/>
-      </a>
+            <a href="https://www.instagram.com/csce.uoft/?hl=en">
+                <FaInstagram size={50}/> 
+                
+            </a >
 
-      </div>
+            <a href="https://www.facebook.com/CSCEUofT/">
+                <FaFacebook size={50}/>    
+            </a>
+            </div>
+
     
     </div>
 
