@@ -1,13 +1,26 @@
 .background{
-    background-image:url("https://img.freepik.com/free-photo/dark-green-wall-backdrop-grunge-background-texture_1258-108737.jpg?w=1380&t=st=1672867761~exp=1672868361~hmac=a9e2790a4a4e67238333ca765873bb730fc217ce7bf3f880a4c4c1fc78672bfa");
+    background-image:url("https://images.pexels.com/photos/66869/green-leaf-natural-wallpaper-royalty-free-66869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     
-    background-size: 1500px;
+    background-size: 2000px;
 
 }
+.mentor_background{
+    background-image:url("https://images.unsplash.com/photo-1566807387450-b74aea0e727e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: 2000px;
 
+}
 .titles{
     text-align: center;
     color: aliceblue;
+}
+.movement{
+    display: flex;
+    font-size:28px;
+    flex-direction: column;
+    transform:translateX(65%);
+    color: aliceblue;
+
+    
 }
 
 .article_design{
