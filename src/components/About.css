@@ -1,5 +1,5 @@
 .background{
-    background-image:url("https://images.pexels.com/photos/66869/green-leaf-natural-wallpaper-royalty-free-66869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image:url("https://images.unsplash.com/photo-1629197520635-16570fbd0bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80");
     
     background-size: 2000px;
 
@@ -13,12 +13,18 @@
     text-align: center;
     color: aliceblue;
 }
+
+.card{
+    margin-bottom: 30px;
+}
+
 .movement{
     display: flex;
     font-size:28px;
     flex-direction: column;
     transform:translateX(65%);
     color: aliceblue;
+    
 
     
 }

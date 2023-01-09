@@ -9,7 +9,7 @@ function Mentorship (){
         <div className="mentor_background" >
 
             <br/>
-            <h1 className="titles">Get in touch with us here </h1>
+            <h1 className="titles">Get in touch with us </h1>
             
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI-9iRW-o_zewKhAqz5yD1UA9vp7w98QZu00H8jUE_RTN77w/viewform?embedded=true" width="640" height="948" frameborder="10" marginheight="0" marginwidth="10">Loading…</iframe>   
 

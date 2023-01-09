@@ -53,24 +53,6 @@ function About() {
   </Container>
     )}
   </div>
-      <br></br>
-      <h2 className="titles">
-      
-    For more information about our events, follow us in social media !
-
-      </h2>
-
-      <div className="titles">
-
-            <a href="https://www.instagram.com/csce.uoft/?hl=en">
-                <FaInstagram size={50}/> 
-                
-            </a >
-
-            <a href="https://www.facebook.com/CSCEUofT/">
-                <FaFacebook size={50}/>    
-            </a>
-            </div>
 
     
     </div>
