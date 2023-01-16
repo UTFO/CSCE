@@ -1,4 +1,4 @@
-import "../components/About.css";
+import "../components/Mentor.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { FaInstagram ,FaFacebook} from "react-icons/fa";
 
