@@ -2,7 +2,7 @@
     border-radius: 50px;
     width: 80vw;
     background-image: radial-gradient(circle farthest-side at 0 0,white 0%,#008037 100%);
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 
 .EventHolder:hover {
@@ -19,4 +19,13 @@
 
 .BottomCardHolder {
     padding-bottom: 3rem;
+}
+
+.background {
+    background: linear-gradient(to bottom, white, white, blue);
+    width: 100vw;
+}
+
+img {
+    width: 100%;
 }

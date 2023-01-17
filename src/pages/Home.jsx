@@ -3,6 +3,7 @@ import EventCard from '../components/EventCard';
 import Events from '../data/Events.json';
 import './Home.css';
 import '../App.css';
+import LandscapeSvg from '../assets/skyline-edited.svg'
 
 const Home = () => {
   let UpcomingEventCardList = [];
@@ -68,7 +69,7 @@ const Home = () => {
   UpcomingEventCardList = createEventCards(currentEvents);
   
   return (
-    <div>
+    <div className="background">
       <div>
         <h1>This is the home page</h1>
       </div>
@@ -89,6 +90,9 @@ const Home = () => {
           </p>
         </div>
         {UpcomingEventCardList}
+      </div>
+      <div>
+        <img src={LandscapeSvg} alt='Landscape'/>
       </div>
     </div>
   );
