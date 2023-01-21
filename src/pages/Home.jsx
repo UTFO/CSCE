@@ -3,7 +3,7 @@ import EventCard from '../components/EventCard';
 import Events from '../data/Events.json';
 import './Home.css';
 import '../App.css';
-import LandscapeSvg from '../assets/skyline-edited.svg'
+import LandscapeSvg from '../assets/landscape.svg'
 
 const Home = () => {
   let UpcomingEventCardList = [];
