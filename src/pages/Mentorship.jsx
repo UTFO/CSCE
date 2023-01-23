@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import '../components/Mentor.css';
 
 function Mentorship() {
   return (
