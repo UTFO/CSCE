@@ -1,22 +1,38 @@
+.spacer {
+  aspect-ratio: 960/320;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wavylayer {
+  background-image: url('../assets/layeredwaves.svg');
+}
+
 .EventHolder {
-    border-radius: 50px;
-    width: 80vw;
-    background-image: radial-gradient(circle farthest-side at 0 0,white 0%,#008037 100%);
-    margin: 0 auto;
+  border-radius: 50px;
+  width: 80vw;
+  background-image: radial-gradient(
+    circle farthest-side at 0 0,
+    white 0%,
+    #008037 100%
+  );
+  margin: 0 auto;
 }
 
 .EventHolder:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .EventHolderTitle {
-    color: white;
+  color: white;
 }
 
 .CardHolder {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .BottomCardHolder {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
