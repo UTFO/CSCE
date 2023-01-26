@@ -1,3 +1,6 @@
 .layout {
-    width: 100vw;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
 }
