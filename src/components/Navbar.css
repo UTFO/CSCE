@@ -1,23 +1,7 @@
-#Navbar {
-    display:flex;
-    width: 50%;
-    justify-content: space-between;
+.NavLogo {
+  height: 5em;
 }
 
-.navLink {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.navLink:hover {
-    color: rgb(118, 118, 118);
-}
-
-.logo {
-    width: 80%;
-    height: 5%;
-}
-
-#navBrand {
-    padding-right: 5%;
+.NavLogoSmall {
+  height: 3.5em;
 }

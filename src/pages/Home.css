@@ -46,7 +46,12 @@
   width: 100%;
 }
 
-img {
+.HeroImg {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Landscape {
   width: 100vw;
   overflow: hidden;
 }

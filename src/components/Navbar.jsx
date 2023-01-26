@@ -1,11 +1,15 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { LinkContainer } from 'react-router-bootstrap';
+import './Navbar.css';
 
 const CSCENavbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 72) {
+    if (window.scrollY >= 110) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -15,53 +19,46 @@ const CSCENavbar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <nav
-      className={
-        navbar
-          ? 'navbar navbar-expand-lg bg-light py-3 fixed-top'
-          : 'navbar navbar-expand-lg py-3 bg-transparent fixed-top'
-      }
+    <Navbar
+      className="shadow-sm"
+      bg="light"
+      variant="light"
+      sticky="top"
+      expand="lg"
     >
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          Home
-        </Link>
-
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navmenu">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/mentorship" className="nav-link">
-                Mentorship
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <Container>
+        <Navbar.Brand>
+          <LinkContainer to="/">
+            <img
+              src={navbar ? '../assets/LogoNoWords.png' : '../assets/Logo.png'}
+              className={
+                navbar ? 'NavLogoSmall img-fluid' : 'NavLogo img-fluid'
+              }
+            />
+          </LinkContainer>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <LinkContainer to="/">
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/about">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/events">
+              <Nav.Link>Events</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/mentorship">
+              <Nav.Link>Mentorship</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

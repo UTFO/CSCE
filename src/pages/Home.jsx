@@ -81,8 +81,7 @@ const Home = () => {
           <div className="col-10 col-sm-8 col-lg-6">
             <img
               src="../assets/heropicture.svg"
-              className="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
+              className="d-block mx-lg-auto img-fluid HeroImg"
               width="700"
               height="500"
               loading="lazy"
@@ -90,14 +89,10 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <h1 className="display-5 fw-bold lh-1 mb-3">
-              Canadian Society of Civil Engineers
+              Learn. Develop. Connect.
             </h1>
             <p className="col-6 lead">
-              University of Toronto Chapter
-              <img
-                className="img-fluid UofTLogo"
-                src="../assets/UofTLogo.svg"
-              />
+              Welcome to the Canadian Society for Civil Engineers
             </p>
           </div>
         </div>
@@ -122,7 +117,7 @@ const Home = () => {
         {UpcomingEventCardList}
       </div>
       <div>
-        <img src={LandscapeSvg} alt="Landscape" />
+        <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
       </div>
     </div>
   );
