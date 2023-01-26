@@ -43,7 +43,7 @@
 
 .background {
   background: linear-gradient(to bottom, white, white, blue);
-  width: 100vw;
+  width: 100%;
 }
 
 img {

@@ -13,6 +13,11 @@
     color: rgb(118, 118, 118);
 }
 
+.logo {
+    width: 80%;
+    height: 5%;
+}
+
 #navBrand {
     padding-right: 5%;
 }
