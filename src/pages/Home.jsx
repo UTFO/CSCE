@@ -92,21 +92,13 @@ const Home = () => {
             <h1 className="display-5 fw-bold lh-1 mb-3">
               Canadian Society of Civil Engineers
             </h1>
-            <p className="lead">University of Toronto Chapter</p>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                className="btn btn-primary btn-lg px-4 me-md-2"
-              >
-                Primary
-              </button>
-              <button
-                type="button"
-                className="btn btn-outline-secondary btn-lg px-4"
-              >
-                Default
-              </button>
-            </div>
+            <p className="col-6 lead">
+              University of Toronto Chapter
+              <img
+                className="img-fluid UofTLogo"
+                src="../assets/UofTLogo.svg"
+              />
+            </p>
           </div>
         </div>
       </div>

@@ -11,12 +11,20 @@
 }
 
 .EventHolder {
-    border-radius: 50px;
-    width: 80vw;
-    background-image: radial-gradient(circle farthest-side at 0 0,white 0%,#008037 100%);
-    margin: 5vh auto;
+  border-radius: 50px;
+  width: 80vw;
+  background-image: radial-gradient(
+    circle farthest-side at 0 0,
+    white 0%,
+    #008037 100%
+  );
+  margin: 5vh auto;
 }
 
+.UofTLogo {
+  height: 3em;
+  width: 3em;
+}
 .EventHolder:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -30,15 +38,15 @@
 }
 
 .BottomCardHolder {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .background {
-    background: linear-gradient(to bottom, white, white, blue);
-    width: 100vw;
+  background: linear-gradient(to bottom, white, white, blue);
+  width: 100vw;
 }
 
 img {
-    width: 100vw;
-    overflow: hidden;
+  width: 100vw;
+  overflow: hidden;
 }
