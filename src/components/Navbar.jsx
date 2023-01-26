@@ -1,37 +1,67 @@
-/* eslint-disable prettier/prettier */
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logoSvg from '../assets/logo.svg';
-import './Navbar.css';
 
 const CSCENavbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 72) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#">
-        <img src={logoSvg} alt="CSCE" className="logo"/>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto" id="Navbar">
-          <Link to="/" className="navLink">
-            Home
-          </Link>
-          <Link to="/about" className="navLink">
-            About
-          </Link>
-          <Link to="/contact" className="navLink">
-            Contact
-          </Link>
-          <Link to="/events" className="navLink">
-            Events
-          </Link>
-          <Link to="/mentorship" className="navLink">
-            Mentorship
-          </Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav
+      className={
+        navbar
+          ? 'navbar navbar-expand-lg bg-light py-3 fixed-top'
+          : 'navbar navbar-expand-lg py-3 bg-transparent fixed-top'
+      }
+    >
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          Home
+        </Link>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navmenu">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link">
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/mentorship" className="nav-link">
+                Mentorship
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
