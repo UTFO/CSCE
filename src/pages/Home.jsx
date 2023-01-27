@@ -1,3 +1,4 @@
+import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
 import LandscapeSvg from '../assets/landscape.svg';
 import EventCard from '../components/EventCard';
@@ -91,9 +92,27 @@ const Home = () => {
             <h1 className="display-5 fw-bold lh-1 mb-3">
               Learn. Develop. Connect.
             </h1>
-            <p className="col-6 lead">
-              Welcome to the Canadian Society for Civil Engineers
+            <p className="lead">
+              Welcome to the Canadian Society for Civil Engineers.
             </p>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <LinkContainer to="/about">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  Learn More
+                </button>
+              </LinkContainer>
+              <LinkContainer to="/mentorship">
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Become a Mentee
+                </button>
+              </LinkContainer>
+            </div>
           </div>
         </div>
       </div>
