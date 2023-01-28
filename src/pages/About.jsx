@@ -31,6 +31,7 @@ function About() {
       <div className="row row-cols-5 row-cols-md-5">
         {Users.map((users) => (
           <Container className="section">
+           <p>
             <Card style={{ width: '17rem' }}>
               <Card.Img
                 style={{ width: 270, height: 300 }}
@@ -43,6 +44,7 @@ function About() {
               </Card.Body>
               <br></br>
             </Card>
+           </p>
           </Container>
         ))}
       </div>
