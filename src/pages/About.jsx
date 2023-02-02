@@ -1,55 +1,65 @@
-import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Row from "react-bootstrap/Row";
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import Users from '../data/Users.json';
+import { Container } from 'react-bootstrap';
+import Users from '../Data/Users.json'
+import "../components/About.css";
+import 'font-awesome/css/font-awesome.min.css';
+ 
+import { FaInstagram ,FaFacebook} from "react-icons/fa";
 
 function About() {
+ 
   return (
+
+    
     <div className="background">
-      <br />
+      
+      <br/>      
 
-      <h1 className="titles">About us</h1>
+        <h1 className="titles">
+          About us 
+        </h1>
 
-      <h3 className="titles">
-        We are a networking club for civil engineering students. We help
-        students discover different career paths by connecting students to
-        mentors in the industry, hosting panels about different fields in civil
-        engineering, hold skills workshops, and help run career fair
-      </h3>
-
-      <br />
-      <br />
+        <h3 className="titles"> 
+        We are a networking club for civil engineering students. 
+        We help students discover different career paths by connecting students to mentors in the industry,
+         hosting panels about different fields in civil engineering, hold skills workshops, and help run career fair
+        </h3>
+        
+      <br/>
+      <br/>
 
       <h2 className="titles"> Meet The Team </h2>
 
-      <br></br>
+      <br>
+      </br>
+      
 
-      <div className="row row-cols-5 row-cols-md-5">
-        {Users.map((users) => (
-          <Container className="section">
-           <p>
-            <Card style={{ width: '17rem' }}>
-              <Card.Img
-                style={{ width: 270, height: 300 }}
-                variant="top"
-                src={users.photo}
-              />
-              <Card.Body>
-                <Card.Title>{users.name}</Card.Title>
-                <Card.Subtitle>{users.title}</Card.Subtitle>
-              </Card.Body>
-              <br></br>
-            </Card>
-           </p>
-          </Container>
-        ))}
+
+  <div className="row row-cols-5 row-cols-md-5">
+    {Users.map((users)=>
+  
+    <div className='col-12 col-md-6 col-lg-4'>
+      <div className="section">
+        <div class="card"  >
+          <img className='col-lg-4 col-md-4 col-sm-4'src={users.photo} alt={users.name}  style={{ width: 270, height: 300 }} class="card-img-top" />
+        <div class="card-body"> 
+        <h5 class="card-title">{users.name}</h5>
+        <p class="card-text">{users.title}</p>
       </div>
-      <br></br>
     </div>
+  </div>
+</div>
+
+
+    )}
+    </div>
+  </div>
+   
   );
 }
 
