@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import "./Contact.css"
 function Contact(){
     return (
-        <div>
+        <div className="bg">
         <h1>Contact Us!</h1>
         
         <Container>

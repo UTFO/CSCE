@@ -1,3 +1,6 @@
+.bg{
+    background-image: linear-gradient(to top,  #075D2C 0%, white 100%)
+}
 .row-1{
     padding: 1.3rem;
 }
@@ -20,7 +23,7 @@ h1{
 
 .submit{
     margin-left: 1.3rem;
-    margin-bottom: 2rem;
-    color: aliceblue;
-    background-color: #008037;
+    margin-bottom: 1rem;
+    color: #075D2C;
+    background-color: white;
 }
