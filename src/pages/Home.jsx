@@ -48,11 +48,7 @@ const Home = () => {
     for (let i = 0; i < eventData.length; i++) {
       eventCardList.push(
         <div
-          className={
-            i == eventData.length - 1
-              ? 'CardHolder BottomCardHolder'
-              : 'CardHolder'
-          }
+          className={"CardHolder"}
         >
           <EventCard
             eventName={eventData[i].eventName}
@@ -117,7 +113,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="EventHolder enlarge">
+      <div className="EventHolder">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>
           <h2 className="EventHolderTitle">Upcoming Events</h2>
           <p
@@ -133,7 +129,9 @@ const Home = () => {
             Check out some of our upcoming events
           </p>
         </div>
-        {UpcomingEventCardList}
+        <div className="AllCardsHolder">
+          {UpcomingEventCardList}
+        </div>
       </div>
       <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />

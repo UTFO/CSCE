@@ -1,14 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import '../components/Mentor.css';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
 function Mentorship() {
   return (
     <div className="mentor_background">
       <br />
       <h1 className="titles">Get in touch with us </h1>
-      <p className="iframe_adjust">
+      <p className="center">
         <iframe
+          className="form"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfI-9iRW-o_zewKhAqz5yD1UA9vp7w98QZu00H8jUE_RTN77w/viewform?embedded=true"
           width="640"
           height="948"
@@ -26,13 +26,15 @@ function Mentorship() {
       </h2>
 
       <div className="center">
-        <a href="https://www.instagram.com/csce.uoft/?hl=en">
-          <FaInstagram size={50} />
-        </a>
+        <p>
+          <a href="https://www.instagram.com/csce.uoft/?hl=en">
+            <FaInstagram class="icon" size={50} />
+          </a>
 
-        <a href="https://www.facebook.com/CSCEUofT/">
-          <FaFacebook size={47} />
-        </a>
+          <a href="https://www.facebook.com/CSCEUofT/">
+            <FaFacebook class="icon" size={47} />
+          </a>
+        </p>
       </div>
     </div>
   );

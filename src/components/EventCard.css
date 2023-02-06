@@ -1,5 +1,5 @@
 .customCardClass {
-    max-width: 80%;
+    min-width: 20vw;
     border-radius: 25px;
     background-color: lightgray;
     margin: 0 auto;
