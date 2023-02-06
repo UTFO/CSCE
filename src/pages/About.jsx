@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import { Container } from 'react-bootstrap';
 import Users from '../Data/Users.json'
 import "../components/About.css";
-import 'font-awesome/css/font-awesome.min.css';
  
 import { FaInstagram ,FaFacebook} from "react-icons/fa";
 

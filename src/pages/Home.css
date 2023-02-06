@@ -6,13 +6,9 @@
   background-size: cover;
 }
 
-.wavylayer {
-  background-image: url('../assets/layeredwaves.svg');
-}
 
 .EventHolder {
-  border-radius: 50px;
-  width: 80vw;
+  width: 100%;
   background-image: radial-gradient(
     circle farthest-side at 0 0,
     white 0%,
@@ -41,17 +37,26 @@
   padding-bottom: 3rem;
 }
 
+.AllCardsHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .background {
   background: linear-gradient(to bottom, white, white, blue);
   width: 100%;
 }
 
 .HeroImg {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
 .Landscape {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
