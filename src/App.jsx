@@ -10,6 +10,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Mentorship from './pages/Mentorship';
+import Contact from './pages/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="mentorship" element={<Mentorship />} />
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );

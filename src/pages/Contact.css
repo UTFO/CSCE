@@ -1,0 +1,26 @@
+.row-1{
+    padding: 1.3rem;
+}
+
+h1{
+    padding-left: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    color: #075D2C;
+}
+
+.box{
+    padding: 1.2rem;
+    border-radius: 10px ;
+}
+
+.row-2{
+    padding: 2rem;
+}
+
+.submit{
+    margin-left: 1.3rem;
+    margin-bottom: 2rem;
+    color: aliceblue;
+    background-color: #008037;
+}
