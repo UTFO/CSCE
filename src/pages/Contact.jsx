@@ -8,13 +8,16 @@ function Contact(){
         <h1>Contact Us!</h1>
         
         <Container>
-        <form action="https://formsubmit.co/youremail@mail.com" method="POST">
+        <form action="https://formsubmit.co/osman.sultan@mail.utoronto.ca" method="POST">
         <Row className="row-1">
         
-        <Col xs={3}><input type="text" name="name" placeholder="Name" required className="box" /></Col>
-        <Col xs={3}><input type="email" name="email" placeholder="Email address" required  className="box"/></Col>
+        <Col xs={8} md={4}><input type="text" name="name" placeholder="First and Last Name" required className="box" /></Col>
+        
     
+        <Col xs={8} md={4}><input type="email" name="email" placeholder="Email address" required className="box"/></Col>
+        
         </Row>
+        
         <Row className="row-2">
         <textarea name="message" placeholder="Message" rows={10} required className="box"></textarea>
         
