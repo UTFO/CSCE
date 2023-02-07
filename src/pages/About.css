@@ -1,0 +1,34 @@
+.iframe_adjust {
+  transform: translateX(35%);
+}
+
+.titles {
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.movement {
+  display: flex;
+  font-size: 28px;
+  flex-direction: column;
+  transform: translateX(65%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  width: 50%;
+}
+
+.section {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}

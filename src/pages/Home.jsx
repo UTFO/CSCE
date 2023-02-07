@@ -47,9 +47,7 @@ const Home = () => {
     let eventCardList = [];
     for (let i = 0; i < eventData.length; i++) {
       eventCardList.push(
-        <div
-          className={"CardHolder"}
-        >
+        <div className={'CardHolder'}>
           <EventCard
             eventName={eventData[i].eventName}
             eventDate={eventData[i].eventDate}
@@ -129,9 +127,7 @@ const Home = () => {
             Check out some of our upcoming events
           </p>
         </div>
-        <div className="AllCardsHolder">
-          {UpcomingEventCardList}
-        </div>
+        <div className="AllCardsHolder">{UpcomingEventCardList}</div>
       </div>
       <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />

@@ -1,0 +1,40 @@
+.iframe_adjust {
+  transform: translateX(35%);
+}
+
+.form {
+  box-shadow: 10px 5px 5px black;
+}
+.titles {
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.movement {
+  display: flex;
+  font-size: 28px;
+  flex-direction: column;
+  transform: translateX(65%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  width: 50%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: blue;
+}

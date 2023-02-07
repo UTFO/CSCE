@@ -1,5 +1,5 @@
-import '../components/Mentor.css';
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import './Mentor.css';
 
 function Mentorship() {
   return (
