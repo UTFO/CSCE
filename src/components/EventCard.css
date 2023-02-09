@@ -1,8 +1,9 @@
 .customCardClass {
-    min-width: 20vw;
+    min-width: 150px;
     border-radius: 25px;
     background-color: lightgray;
     margin: 0 auto;
+    height: 90%;
 }
 
 .customCardClass:hover {
