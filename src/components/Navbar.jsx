@@ -20,8 +20,8 @@ const CSCENavbar = () => {
 
   return (
     <Navbar
-      className="shadow-sm"
-      bg="light"
+      className={navbar ? 'shadow-sm' : ''}
+      bg={navbar ? 'light' : 'transparent'}
       variant="light"
       sticky="top"
       expand="lg"

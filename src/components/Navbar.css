@@ -4,4 +4,5 @@
 
 .NavLogoSmall {
   height: 3.5em;
+  transition: 0.5s ease;
 }
