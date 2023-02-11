@@ -5,7 +5,7 @@ import './Contact.css';
 function Contact() {
   return (
     <div className="bg">
-      <h1>Contact Us!</h1>
+      <h1 className="title">Contact Us!</h1>
 
       <Container>
         <form

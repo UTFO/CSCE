@@ -49,9 +49,6 @@ const CSCENavbar = () => {
             <LinkContainer to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/events">
-              <Nav.Link>Events</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/mentorship">
               <Nav.Link>Mentorship</Nav.Link>
             </LinkContainer>

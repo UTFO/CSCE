@@ -1,6 +1,5 @@
 import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
-import LandscapeSvg from '../assets/landscape.svg';
 import EventCard from '../components/EventCard';
 import Events from '../data/Events.json';
 import './Home.css';
@@ -93,7 +92,7 @@ const Home = () => {
               <LinkContainer to="/about">
                 <button
                   type="button"
-                  className="btn btn-primary btn-lg px-4 me-md-2"
+                  className="btn btn-success btn-lg px-4 me-md-2"
                 >
                   Learn More
                 </button>
@@ -129,9 +128,9 @@ const Home = () => {
         </div>
         <div className="AllCardsHolder">{UpcomingEventCardList}</div>
       </div>
-      <div>
+      {/* <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
-      </div>
+      </div> */}
     </div>
   );
 };

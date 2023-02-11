@@ -1,0 +1,9 @@
+.icons a {
+  font-size: 2rem;
+  color: white;
+}
+
+.icons a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
