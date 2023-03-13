@@ -9,24 +9,19 @@ function About() {
   console.log(filterExec, filterAso);
   return (
     <div className="background">
-      <br />
+      <section id="about" className="px-5 py-2">
+        <div className="container">
+          <h3 className="text-center">About CSCE UofT</h3>
+          <p>
+            We are a networking club for civil engineering students. We help
+            students discover different career paths by connecting students to
+            mentors in the industry, hosting panels about different fields in
+            civil engineering, hold skills workshops, and help run career fair.
+          </p>
+        </div>
+      </section>
 
-      <h1 className="titles">About us</h1>
-
-      <h3 className="titles">
-        We are a networking club for civil engineering students. We help
-        students discover different career paths by connecting students to
-        mentors in the industry, hosting panels about different fields in civil
-        engineering, hold skills workshops, and help run career fair
-      </h3>
-
-      <br />
-      <br />
-
-      <h2 h2 className="titles ">
-        {' '}
-        MEET THE TEAM{' '}
-      </h2>
+      <h3 className="text-center">Meet the Team!</h3>
 
       <div className="title_form">
         <br></br>

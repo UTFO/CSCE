@@ -17,10 +17,18 @@ const Footer = () => {
             &nbsp; &copy; 2023 CSCE University of Toronto Student Branch
           </div>
           <div className="col-1 d-flex align-items-center justify-content-evenly icons">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/csce.uoft/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/CSCEUofT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
