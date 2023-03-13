@@ -30,11 +30,14 @@ const CSCENavbar = () => {
         <Navbar.Brand>
           <LinkContainer to="/">
             <img
-              src={navbar ? '../assets/LogoNoWords.png' : '../assets/Logo.png'}
+              src={'../assets/LogoNoWords.png'}
               className={
                 navbar ? 'NavLogoSmall img-fluid' : 'NavLogo img-fluid'
               }
             />
+          </LinkContainer>
+          <LinkContainer to="/">
+            <img src = {'../assets/LogoWordsOnly.png'} className = {navbar ? 'logoWords img-fluid' : 'logoWordsDisabled img-fluid'}/>
           </LinkContainer>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
