@@ -13,7 +13,7 @@ function Contact() {
           method="POST"
         >
           <Row className="row-1">
-            <Col xs={8} md={4}>
+            <Col xs={3}>
               <input
                 type="text"
                 name="name"
@@ -22,8 +22,7 @@ function Contact() {
                 className="box"
               />
             </Col>
-
-            <Col xs={8} md={4}>
+            <Col xs={3}>
               <input
                 type="email"
                 name="email"
