@@ -67,8 +67,21 @@ const EventHolder = () => {
     const currentEvents = filterUpcomingEvents(Events);
     UpcomingEventCardList = createEventCards(currentEvents);
 
+    let holderClassName;
+    switch(UpcomingEventCardList.length) {
+      case 1:
+        holderClassName = "AllCardsHolderOneCard";
+        break;
+      case 2:
+        holderClassName = "AllCardsHolderTwoCards";
+        break;
+      default:
+        holderClassName = "AllCardsHolder";
+        break;
+    }
+
     return (
-        <div className="AllCardsHolder">{UpcomingEventCardList}</div>
+        <div className={holderClassName}>{UpcomingEventCardList}</div>
     );
 }
 

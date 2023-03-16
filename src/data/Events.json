@@ -106,18 +106,7 @@
         "eventLocation": "Benson Building Room 45",
         "eventAddress": "67 Doe Street",
         "eventDescription": "Join us on jan 25 to learn about CSCE.",
-        "eventTypes": ["Career Fair", "Fundraiser"],
-        "eventRegisterLink":"https://www.google.com/"
-    },
-    {
-        "eventName": "test 2",
-        "eventDate": "Mar 27, 2023",
-        "eventStartTime":"9:00 a.m.",
-        "eventEndTime":"12:00 p.m.",
-        "eventLocation": "Benson Building Room 45",
-        "eventAddress": "67 Doe Street",
-        "eventDescription": "Join us on jan 25 to learn about CSCE.",
-        "eventTypes": ["Information Session", "Panel", "Food Provided"],
+        "eventTypes": ["Information Session", "Panel"],
         "eventRegisterLink":"https://www.google.com/"
     }
 ]
