@@ -69,6 +69,9 @@ const EventHolder = () => {
 
     let holderClassName;
     switch(UpcomingEventCardList.length) {
+      case 0:
+        holderClassName = "NoCards";
+        break;
       case 1:
         holderClassName = "AllCardsHolderOneCard";
         break;
@@ -80,9 +83,19 @@ const EventHolder = () => {
         break;
     }
 
-    return (
-        <div className={holderClassName}>{UpcomingEventCardList}</div>
-    );
+    let element;
+
+    if (holderClassName != "NoCards") {
+      element = <div className={holderClassName}>{UpcomingEventCardList}</div>
+    }
+
+    else {
+      element = <div className={holderClassName}>
+                  <h2 style={{color: "white"}}>No Upcoming Events<br />Check Back Soon!</h2>
+                </div>
+    }
+
+    return element;
 }
 
 export default EventHolder;

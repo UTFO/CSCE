@@ -53,6 +53,14 @@
   }
 }
 
+.NoCards {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .AllCardsHolderOneCard {
   display: grid;
   grid-template-columns: auto;
