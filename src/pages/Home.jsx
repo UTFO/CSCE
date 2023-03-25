@@ -5,7 +5,6 @@ import Events from '../data/Events.json';
 import './Home.css';
 
 const Home = () => {
-
   return (
     <>
       <div className="hero">
@@ -50,6 +49,8 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="spacer layer1"></div>
+
       <div className="EventHolder">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>
           <h2 className="EventHolderTitle">Upcoming Events</h2>
@@ -71,6 +72,7 @@ const Home = () => {
       {/* <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
       </div> */}
+      <div className="spacer layer2"></div>
     </>
   );
 };

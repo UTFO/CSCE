@@ -20,8 +20,8 @@ const CSCENavbar = () => {
 
   return (
     <Navbar
-      className={navbar ? 'shadow-sm' : ''}
-      bg={navbar ? 'light' : 'transparent'}
+      className={navbar ? 'shadow-md' : ''}
+      bg={navbar ? 'light-subtle' : 'white'}
       variant="light"
       sticky="top"
       expand="lg"
@@ -37,7 +37,12 @@ const CSCENavbar = () => {
             />
           </LinkContainer>
           <LinkContainer to="/">
-            <img src = {'../assets/LogoWordsOnly.png'} className = {navbar ? 'logoWords img-fluid' : 'logoWordsDisabled img-fluid'}/>
+            <img
+              src={'../assets/LogoWordsOnly.png'}
+              className={
+                navbar ? 'logoWords img-fluid' : 'logoWordsDisabled img-fluid'
+              }
+            />
           </LinkContainer>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

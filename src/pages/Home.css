@@ -1,19 +1,23 @@
 .spacer {
-  aspect-ratio: 960/320;
+  aspect-ratio: 900/200;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.layer1 {
+  background-image: url('../public/assets/layeredwaves1.svg');
+}
+
+.layer2 {
+  background-image: url('../public/assets/layeredwaves2.svg');
+}
+
 .EventHolder {
   width: 100%;
-  background-image: radial-gradient(
-    circle farthest-side at 0 0,
-    white 0%,
-    #008037 100%
-  );
-  
+  /*#198754*/
+  background-image: linear-gradient(to bottom right, #0d6e3f, #0d6e3f);
 }
 
 .UofTLogo {
@@ -80,7 +84,8 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .AllCardsHolder, .AllCardsHolderTwoCards {
+  .AllCardsHolder,
+  .AllCardsHolderTwoCards {
     display: grid;
     grid-template-columns: auto;
     column-gap: 2%;
@@ -98,4 +103,13 @@
 .Landscape {
   width: 100%;
   overflow: hidden;
+}
+
+.section {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
