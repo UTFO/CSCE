@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="p-5 bg-dark text-white text-center position-relative">
       <div className="container">
         <div className="row">
-          <div className="col-11 d-flex align-items-center">
+          <div className="col-lg-10 col-md-12 d-flex align-items-center">
             <img
               className="img-fluid"
               src="../assets/Logo2.png"
@@ -16,11 +16,12 @@ const Footer = () => {
             />
             &nbsp; &copy; 2023 CSCE University of Toronto Student Branch
           </div>
-          <div className="col-1 d-flex align-items-center justify-content-evenly icons">
+          <div className="col-lg-2 col-md-12 d-flex align-items-center justify-content-center icons">
             <a
               href="https://www.instagram.com/csce.uoft/?hl=en"
               target="_blank"
               rel="noreferrer"
+              className="mx-2"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
