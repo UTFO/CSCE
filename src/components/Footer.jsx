@@ -33,6 +33,17 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
+          <div className="col-12 d-flex align-items-center justify-content-center">
+            Made with ❤️ by{' '}
+            <a
+              href="https://google.com"
+              className="mx-1 custom-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              UTFO
+            </a>
+          </div>
         </div>
       </div>
     </footer>

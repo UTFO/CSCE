@@ -7,3 +7,13 @@
   opacity: 0.5;
   transition: 0.3s;
 }
+
+.custom-link {
+  color: inherit; /* This will make the link color the same as the surrounding text */
+  text-decoration: none; /* This will remove the underline */
+  transition: opacity 0.3s; /* This will make the opacity change smoothly */
+}
+
+.custom-link:hover {
+  opacity: 0.7; /* Adjust the opacity value to your preference */
+}
