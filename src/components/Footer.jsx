@@ -4,19 +4,21 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="p-5 bg-dark text-white text-center position-relative">
-      <div className="container">
+    <footer className="pb-3 mt-auto bg-dark text-white text-center">
+      <div className="container" style={{ maxWidth: '600px' }}>
         <div className="row">
-          <div className="col-lg-10 col-md-12 d-flex align-items-center">
+          <div className="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">
             <img
               className="img-fluid"
               src="../assets/Logo2.png"
               height="64"
               width="64"
             />
+          </div>
+          <div className="col-lg-8 col-md-8 col-sm-12 pt-3 d-flex align-items-center justify-content-center">
             &nbsp; &copy; 2023 CSCE University of Toronto Student Branch
           </div>
-          <div className="col-lg-2 col-md-12 d-flex align-items-center justify-content-center icons">
+          <div className="col-lg-2 col-md-2 col-sm-12 pt-3 d-flex align-items-center justify-content-center icons">
             <a
               href="https://www.instagram.com/csce.uoft/?hl=en"
               target="_blank"
@@ -33,7 +35,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
-          <div className="col-12 d-flex align-items-center justify-content-center">
+          <div className="col-12 d-flex pt-3 align-items-center justify-content-center">
             Made with ❤️ by{' '}
             <a
               href="https://google.com"
