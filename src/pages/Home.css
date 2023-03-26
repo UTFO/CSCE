@@ -113,3 +113,25 @@
   justify-content: center;
   text-align: center;
 }
+.btn-events{
+  font-weight: 700;
+  color: #0d6e3f;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0;
+}
+
+.btn-events:hover svg {
+  margin-left: 25px;
+}
+
+.btn-events svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}

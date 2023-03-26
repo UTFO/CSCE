@@ -2,7 +2,13 @@ import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
 import EventHolder from '../components/EventHolder';
 import Events from '../data/Events.json';
+import {BsFillArrowDownCircleFill} from 'react-icons/bs'
+import { IconContext } from "react-icons";
+import { Container } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import './Home.css';
+
 
 const Home = () => {
   return (
@@ -44,13 +50,27 @@ const Home = () => {
                   </button>
                 </LinkContainer>
               </div>
+
+              <button
+                    type="button"
+                    className="btn btn-events"
+                  >
+                  <a href="#events" style={{textDecoration : 'None',color:'green'}}>
+                  <IconContext.Provider
+      value={{ color: '#0d6e3f', size : '2rem'}}
+    >
+                   Check out our featured events!  <BsFillArrowDownCircleFill />
+                   </IconContext.Provider>
+                    </a>
+                  </button>
+            </div>
             </div>
           </div>
         </div>
-      </div>
+      
 
       <div className="spacer layer1"></div>
-
+      <a name = 'events'>
       <div className="EventHolder">
         <div style={{ textAlign: 'center', paddingTop: 20 }}>
           <h2 className="EventHolderTitle">Upcoming Events</h2>
@@ -69,6 +89,7 @@ const Home = () => {
         </div>
         <EventHolder />
       </div>
+      </a>
       {/* <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
       </div> */}
@@ -76,5 +97,6 @@ const Home = () => {
     </>
   );
 };
+
 
 export default Home;
