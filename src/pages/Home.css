@@ -113,12 +113,9 @@
   justify-content: center;
   text-align: center;
 }
-.btn-events{
-  font-weight: 700;
+
+.btn-events {
   color: #0d6e3f;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
   display: flex;
   align-items: center;
   border: none;
