@@ -52,7 +52,7 @@ const Home = () => {
 
               <button type="button" className="btn btn-events">
                 <a
-                  className="mt-4 fw-bold"
+                  className="mt-4 custom-link-home fw-semibold"
                   href="#events"
                   style={{ textDecoration: 'None', color: 'green' }}
                 >
