@@ -10,14 +10,14 @@
 
 .logoWords {
   height: 5em;
-  transform: translateX(-10%);
-  opacity: 0;
+  transform: translateX(10%);
+  opacity: 1;
   transition: 0.5s all ease;
 }
 
 .logoWordsDisabled {
   height: 5em;
-  opacity: 1;
-  transform: translateX(10%);
+  opacity: 0;
+  transform: translateX(-10%);
   transition: 0.5s all ease;
 }

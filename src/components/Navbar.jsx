@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,18 +9,24 @@ const CSCENavbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 110) {
+    if (window.scrollY > 0) {
       setNavbar(true);
-    } else {
+    } else if (window.pageYOffset === 0) {
       setNavbar(false);
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+
+    return () => {
+      window.removeEventListener('scroll', changeBackground);
+    };
+  }, []);
 
   return (
     <Navbar
-      className={navbar ? 'shadow-md' : ''}
+      className={navbar ? 'shadow' : ''}
       bg={navbar ? 'light-subtle' : 'white'}
       variant="light"
       sticky="top"
@@ -40,7 +46,7 @@ const CSCENavbar = () => {
             <img
               src={'../assets/LogoWordsOnly.png'}
               className={
-                navbar ? 'logoWords img-fluid' : 'logoWordsDisabled img-fluid'
+                navbar ? 'logoWordsDisabled img-fluid' : 'logoWords img-fluid'
               }
             />
           </LinkContainer>
