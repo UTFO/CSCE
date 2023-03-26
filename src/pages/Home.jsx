@@ -3,7 +3,12 @@ import '../App.css';
 import EventHolder from '../components/EventHolder';
 import Events from '../data/Events.json';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs'
+import { IconContext } from "react-icons";
+import { Container } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import './Home.css';
+
 
 const Home = () => {
   return (
@@ -45,18 +50,34 @@ const Home = () => {
                   </button>
                 </LinkContainer>
               </div>
+            <Container>
+            <Row>
+              <Col>
+              <h4 className='btn-label-events btn-events'>
+               Our Featured Events!
+              </h4>
+              </Col>
+              <Col>
               <button
                     type="button"
-                    className="btn btn-events btn-secondary btn-lg px-4 me-md-2"
+                    className="btn btn-events px-4 me-md-2"
                   >
-                  <a href="#events" style={{textDecoration : 'None'}} className='btn-color'>
-                    Check out our featured events below! <BsFillArrowDownCircleFill />
+                  <a href="#events" style={{textDecoration : 'None'}}>
+                  <IconContext.Provider
+      value={{ color: '#0d6e3f', size : '2rem'}}
+    >
+                   <BsFillArrowDownCircleFill />
+                   </IconContext.Provider>
                     </a>
                   </button>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
             </div>
           </div>
         </div>
-      </div>
+      
 
       <div className="spacer layer1"></div>
       <a name = 'events'>
