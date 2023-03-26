@@ -50,29 +50,19 @@ const Home = () => {
                   </button>
                 </LinkContainer>
               </div>
-            <Container>
-            <Row>
-              <Col>
-              <h4 className='btn-label-events btn-events'>
-               Our Featured Events!
-              </h4>
-              </Col>
-              <Col>
+
               <button
                     type="button"
-                    className="btn btn-events px-4 me-md-2"
+                    className="btn btn-events"
                   >
-                  <a href="#events" style={{textDecoration : 'None'}}>
+                  <a href="#events" style={{textDecoration : 'None',color:'green'}}>
                   <IconContext.Provider
       value={{ color: '#0d6e3f', size : '2rem'}}
     >
-                   <BsFillArrowDownCircleFill />
+                   Check out our featured events!  <BsFillArrowDownCircleFill />
                    </IconContext.Provider>
                     </a>
                   </button>
-                  </Col>
-                </Row>
-              </Container>
             </div>
             </div>
           </div>

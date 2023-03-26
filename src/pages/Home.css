@@ -114,12 +114,22 @@
   text-align: center;
 }
 .btn-events{
-  margin-top: 5rem;
-}
-.btn-color{
-  color: white;
-}
-.btn-label-events{
+  font-weight: 700;
   color: #0d6e3f;
-  margin-top: 5.5rem;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-events:hover svg {
+  margin-left: 25px;
+}
+
+.btn-events svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
 }
