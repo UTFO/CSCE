@@ -122,6 +122,7 @@
   display: flex;
   align-items: center;
   border: none;
+  padding: 0;
 }
 
 .btn-events:hover svg {
