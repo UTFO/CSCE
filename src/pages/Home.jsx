@@ -47,9 +47,9 @@ const Home = () => {
               </div>
               <button
                     type="button"
-                    className="btn btn-events btn-success btn-lg px-4 me-md-2"
+                    className="btn btn-events btn-secondary btn-lg px-4 me-md-2"
                   >
-                  <a href="#events" style={{textDecoration : 'None'}}>
+                  <a href="#events" style={{textDecoration : 'None'}} className='btn-color'>
                     Check out our featured events below! <BsFillArrowDownCircleFill />
                     </a>
                   </button>
