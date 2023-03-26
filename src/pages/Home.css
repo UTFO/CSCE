@@ -121,6 +121,7 @@
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 .btn-events:hover svg {
