@@ -16,7 +16,7 @@
 }
 
 .logoWordsDisabled {
-  height: 5em;
+  height: 3.5em;
   opacity: 0;
   transform: translateX(-10%);
   transition: 0.5s all ease;
