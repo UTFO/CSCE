@@ -8,21 +8,17 @@ import './Navbar.css';
 const CSCENavbar = () => {
   const [navbar, setNavbar] = useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY > 0) {
-      setNavbar(true);
-    } else if (window.pageYOffset === 0) {
-      setNavbar(false);
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
+    const changeNav = () => {
+      if (navbar && !window.scrollY) setNavbar(false);
+      else if (!navbar && window.scrollY) setNavbar(true);
+    };
+    window.addEventListener('scroll', changeNav, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', changeBackground);
+      window.removeEventListener('scroll', changeNav, { passive: true });
     };
-  }, []);
+  }, [navbar]);
 
   return (
     <Navbar
