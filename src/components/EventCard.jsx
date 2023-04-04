@@ -15,6 +15,7 @@ import {
 import PropTypes from 'prop-types';
 import './EventCard.css';
 import '../App.css'
+import posterImg from '../assets/2023-03-27 (4).png';
 
 const EventCard = ({
   eventName,
@@ -123,8 +124,9 @@ const EventCard = ({
   );
 
   return (
-    <Card className="customCardClass enlarge">
-      <Card.Body>
+    <Card className="bg-light-subtle customCardClass enlarge">
+      <Card.Img variant="top" src={posterImg} style={{height:"auto", width:"100%", objectFit:"contain", borderRadius: "25px 25px 0 0"}}/>
+      <Card.Body style={{paddingBottom: "1.5em"}}>
         <div className="customCardHeader">
           <Card.Title>{eventName}</Card.Title>
           <div style={{ display: 'inline-flex' }}>{overlayList}</div>
@@ -140,7 +142,7 @@ const EventCard = ({
         <Button
           variant="primary"
           href={eventRegisterLink}
-          className="EventCardButton"
+          className="btn btn-success btn-lg px-3 me-md-2 EventCardButton"
           target="_blank"
           style={{ display: eventRegisterLink === '#' ? 'none' : 'inline' }}
         >
