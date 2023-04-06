@@ -1,10 +1,8 @@
 .customCardClass {
     min-width: 150px;
-    max-width: 550px;
     border-radius: 25px;
-    background-color: lightgray;
     margin: 0 auto;
-    height: 90%;
+    width: 24rem;
 }
 
 .customCardClass:hover {
@@ -26,8 +24,5 @@
 
 .EventCardButton {
     border-radius: 15px;
-}
-
-.EventCardButton:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-size: 1em;
 }
