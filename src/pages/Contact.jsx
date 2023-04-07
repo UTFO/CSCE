@@ -9,7 +9,7 @@ function Contact() {
 
       <Container>
         <form
-          action="https://formsubmit.co/osman.sultan@mail.utoronto.ca"
+          action="https://formsubmit.co/jennifer.sunny@mail.utoronto.ca"
           method="POST"
         >
           <Row className="row-1">
