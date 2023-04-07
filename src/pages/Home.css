@@ -7,11 +7,11 @@
 }
 
 .layer1 {
-  background-image: url('src/assets/layeredwaves1.svg');
+  background-image: url('../assets/layeredwaves1.svg');
 }
 
 .layer2 {
-  background-image: url('src/assets/layeredwaves2.svg');
+  background-image: url('../assets/layeredwaves2.svg');
 }
 
 .EventHolder {
