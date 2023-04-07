@@ -23,9 +23,9 @@ const CSCENavbar = () => {
   return (
     <Navbar
       className={navbar ? 'shadow' : ''}
-      bg={navbar ? 'light-subtle' : 'white'}
+      bg={navbar ? 'light-subtle' : 'transparent'}
       variant="light"
-      sticky="top"
+      sticky={navbar ? 'top' : ''}
       expand="lg"
     >
       <Container>

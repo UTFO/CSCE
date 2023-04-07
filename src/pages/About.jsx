@@ -5,7 +5,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { FaInstagram, FaLinkedin, FaUser } from 'react-icons/fa';
-import Users from '../Data/Users.json';
+import Users from '../data/Users.json';
 import './About.css';
 
 import ReactCardFlip from 'react-card-flip';

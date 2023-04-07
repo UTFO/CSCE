@@ -1,6 +1,3 @@
-import { Container } from 'react-bootstrap';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import { IconContext } from 'react-icons';
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { LinkContainer } from 'react-router-bootstrap';
