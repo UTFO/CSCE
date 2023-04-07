@@ -15,7 +15,10 @@ import {
 import PropTypes from 'prop-types';
 import './EventCard.css';
 import '../App.css'
-import posterImg from '../assets/2023-03-27 (4).png';
+import foodImg from '../assets/buns-bun-svgrepo-com.svg';
+import infoImg from '../assets/lecture-lectern-svgrepo-com.svg';
+import fundraiserImg from '../assets/donations-svgrepo-com.svg';
+import networkingImg from '../assets/networking-svgrepo-com.svg';
 
 const EventCard = ({
   eventName,
@@ -123,9 +126,30 @@ const EventCard = ({
     </OverlayTrigger>
   );
 
+  //determine image
+  const index = Math.floor(Math.random() * eventTypes.length)
+  const imgString = eventTypes[index]
+  let imgLink;
+  switch (imgString) {
+    case ("Information Session" || "Panel"):
+      imgLink = infoImg;
+      break;
+    case ("Food Provided"):
+      imgLink = foodImg
+      break;
+    case ("Fundraiser"):
+      imgLink = fundraiserImg
+      break;
+    case ("Career Fair"):
+      imgLink = networkingImg
+      break;
+    default:
+      imgLink = infoImg;
+  }
+
   return (
     <Card className="bg-light-subtle customCardClass enlarge">
-      <Card.Img variant="top" src={posterImg} style={{height:"auto", width:"100%", objectFit:"contain", borderRadius: "25px 25px 0 0"}}/>
+      <Card.Img variant="top" src={imgLink} style={{height:"auto", width:"100%", objectFit:"contain", borderRadius: "25px 25px 0 0"}}/>
       <Card.Body style={{paddingBottom: "1.5em"}}>
         <div className="customCardHeader">
           <Card.Title>{eventName}</Card.Title>
