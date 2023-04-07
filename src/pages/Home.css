@@ -7,11 +7,11 @@
 }
 
 .layer1 {
-  background-image: url('../public/assets/layeredwaves1.svg');
+  background-image: url('../assets/layeredwaves1.svg');
 }
 
 .layer2 {
-  background-image: url('../public/assets/layeredwaves2.svg');
+  background-image: url('../assets/layeredwaves2.svg');
 }
 
 .EventHolder {
@@ -100,7 +100,7 @@
     margin: 0 auto;
     padding-bottom: 20px;
   }
-  
+
   .customCardClass {
     min-width: 150px;
     max-width: 1550px;
