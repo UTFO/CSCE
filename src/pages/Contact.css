@@ -1,31 +1,4 @@
-.bg {
-  background-image: linear-gradient(to top, #075d2c 0%, white 100%);
-}
-.row-1 {
-  padding: 1.3rem;
-}
-
-.title {
-  padding-left: 4.5rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  color: #075d2c;
-}
-
-.box {
-  padding: 1.2rem;
-  border-radius: 10px;
-}
-
-.row-2 {
-  padding: 2rem;
-}
-
-.submit {
-  margin-left: 1.3rem;
-  margin-bottom: 1rem;
-  color: #075d2c;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
+.backdrop {
+  background-color: #0d6e3f;
+  padding: 3em;
 }

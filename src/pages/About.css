@@ -1,19 +1,14 @@
-.background{
-    background-image:url("https://images.unsplash.com/photo-1629197520635-16570fbd0bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80");
-    
-    background-size: 2000px;
+.background {
+  background-image: url('https://images.unsplash.com/photo-1629197520635-16570fbd0bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80');
 
+  background-size: 2000px;
 }
 
-.iframe_adjust{
-    transform:translateX(35%);
-
-
+.iframe_adjust {
+  transform: translateX(35%);
 }
-.mentor_background{
-    background-image:url("https://images.unsplash.com/photo-1629197520635-16570fbd0bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80");
-    
-
+.mentor_background {
+  background-image: url('https://images.unsplash.com/photo-1629197520635-16570fbd0bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80');
 }
 
 body {
@@ -27,7 +22,6 @@ body {
   margin-bottom: 30px;
   margin-left: 160px;
   align-items: center;
-  
 }
 
 .flip-card-inner {
@@ -38,14 +32,15 @@ body {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -56,7 +51,6 @@ body {
 .flip-card-front {
   background-color: white;
   color: black;
-  
 }
 
 .flip-card-back {
@@ -65,96 +59,89 @@ body {
   transform: rotateY(180deg);
 }
 .card {
-    margin: 10px 10px;
-    margin-bottom:  20px;
-  }
-
-.titles{
-    text-align: center;
-    color: aliceblue;
+  margin: 10px 10px;
+  margin-bottom: 20px;
 }
 
-.accent-left{
-    color:whitesmoke
-}
-.title_form{
-    background:#008037
-}
-.card{
-    margin-bottom: 30px;
+.titles {
+  text-align: center;
+  color: aliceblue;
 }
 
-.movement{
-    display: flex;
-    font-size:28px;
-    flex-direction: column;
-    transform:translateX(65%);
-    color: aliceblue;
-    
-
-    
+.accent-left {
+  color: whitesmoke;
+}
+.title_form {
+  background: #008037;
+}
+.card {
+  margin-bottom: 30px;
 }
 
-.article_design{
-    background-color: aqua;
+.movement {
+  display: flex;
+  font-size: 28px;
+  flex-direction: column;
+  transform: translateX(65%);
+  color: aliceblue;
+}
+
+.article_design {
+  background-color: aqua;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
-    width: 50%;
-    
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
+  width: 50%;
+}
 
-
-.section{
-    display:flex;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items:center;
-    justify-content: center;
+.section {
+  display: flex;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    margin: 10px 10px;
-  }
-  
-  input[type='checkbox'] {
-    display: none;
-  }
-  
-  /* Flip Cards CSS */
-  .card-container {
-    display: grid;
-    perspective: 600px;
-  }
-  
-  .card-flip {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    grid-template-areas: "frontAndBack";
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-  }
-  
-  .card-flip div {
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-  }
-  
-  .front {
-    grid-area: frontAndBack;
-  }
-  
-  .back {
-    grid-area: frontAndBack;
-  }
-  
-  input[type='checkbox']:checked + .card-container .card-flip {
-    transform: rotateY(180deg);
-  }
-  
+  margin: 10px 10px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 600px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: 'frontAndBack';
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+}
+
+input[type='checkbox']:checked + .card-container .card-flip {
+  transform: rotateY(180deg);
+}

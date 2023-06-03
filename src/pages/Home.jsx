@@ -22,9 +22,7 @@ const Home = () => {
               />
             </div>
             <div className="col-lg-6">
-              <h1 className="display-5 fw-bold lh-1 mb-3">
-                Learn. Develop. Connect.
-              </h1>
+              <h1 className="display-5 lh-1 mb-3">Learn. Develop. Connect.</h1>
               <p className="lead">
                 Welcome to the Canadian Society for Civil Engineers.
               </p>
@@ -56,7 +54,8 @@ const Home = () => {
                   <IconContext.Provider
                     value={{ color: '#0d6e3f', size: '2rem' }}
                   >
-                    Check out our featured events! <BsFillArrowDownCircleFill />
+                    Check out our featured events!
+                    <BsFillArrowDownCircleFill />
                   </IconContext.Provider>
                 </a>
               </button>
@@ -89,7 +88,6 @@ const Home = () => {
       {/* <div>
         <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
       </div> */}
-      <div className="spacer layer2"></div>
     </>
   );
 };
