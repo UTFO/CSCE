@@ -1,4 +1,3 @@
-import '.About.css';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -7,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { FaInstagram, FaLinkedin, FaUser } from 'react-icons/fa';
 import Users from '../data/Users.json';
+import './About.css';
 
 import ReactCardFlip from 'react-card-flip';
 
