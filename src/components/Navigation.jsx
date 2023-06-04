@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
-import './Navbar.css';
+import './Navigation.css';
 
-const CSCENavbar = () => {
+const Navigation = () => {
   const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
@@ -22,10 +22,10 @@ const CSCENavbar = () => {
 
   return (
     <Navbar
-      className={navbar ? 'shadow' : ''}
-      bg={navbar ? 'light-subtle' : 'transparent'}
+      className={navbar ? 'Navbar shadow solid' : 'Navbar transparent'}
+      bg={navbar ? '' : ''}
       variant="light"
-      sticky={navbar ? 'top' : ''}
+      fixed="top"
       expand="lg"
     >
       <Container>
@@ -69,4 +69,4 @@ const CSCENavbar = () => {
   );
 };
 
-export default CSCENavbar;
+export default Navigation;

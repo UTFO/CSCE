@@ -1,0 +1,38 @@
+.NavLogo {
+  height: 4em;
+  transition: 0.5s ease;
+}
+
+.NavLogoSmall {
+  height: 3em;
+  transition: 0.5s ease;
+}
+
+.logoWords {
+  height: 4em;
+  transform: translateX(10%);
+  opacity: 1;
+  transition: 0.5s all ease;
+}
+
+.logoWordsDisabled {
+  height: 3em;
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: 0.5s all ease;
+}
+
+.Navbar.transparent {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.Navbar.solid {
+  background-color: rgba(255, 255, 255, 1); /* or use any other color */
+  backdrop-filter: blur(1px); /* Apply blur */
+}

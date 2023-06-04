@@ -5,8 +5,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <>
-      <div className="spacer layer2"></div>
-      <footer className="pb-3 bg-dark text-white text-center">
+      <footer className="py-4 bg-dark text-white text-center">
         <div className="container" style={{ maxWidth: '600px' }}>
           <div className="row">
             <div className="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center justify-content-center">

@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
-import CSCENavbar from '../components/Navbar';
+import Navbar from '../components/Navigation';
 import './Layout.css';
 
 const Layout = () => {
   return (
     <div className="layout">
-      <CSCENavbar />
+      <Navbar />
       <Outlet />
       <Footer />
     </div>

@@ -1,6 +1,5 @@
 .layout {
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    position: absolute;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
 }

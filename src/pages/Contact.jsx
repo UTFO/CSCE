@@ -62,8 +62,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="backdrop">
-      <Row>
+    <div className="backdrop contact">
+      <Row className="page-content">
         <Col className="text-white" lg={6}>
           <Container>
             <Row>

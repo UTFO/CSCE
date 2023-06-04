@@ -37,7 +37,7 @@ function About() {
   var cards = document.querySelectorAll('.card');
 
   return (
-    <div className="background">
+    <div className="background about">
       <section id="about" className="px-5 py-2">
         <h1 className="titles">About us</h1>
 
