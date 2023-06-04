@@ -37,7 +37,7 @@ function About() {
   var cards = document.querySelectorAll('.card');
 
   return (
-    <div className="background about">
+    <div className="background">
       <section id="about" className="px-5 py-2">
         <h1 className="titles">About us</h1>
 
@@ -48,22 +48,24 @@ function About() {
           civil engineering, hold skills workshops, and help run career fair
         </h3>
       </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 
       <form className="title_form">
         <h2 className="accent left accent-left"> &nbsp;&nbsp;Executives</h2>
       </form>
-      <label className="card-container" htmlFor="card-2">
         <div className="row row-cols-5 px-5 mx-5 px-5 ">
           {filterExec.map((user) => (
             <div className="col-12 col-md-6 col-lg-4 ">
-              <div className="flip-card card">
+              <div className="flip-card card mx-auto">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
                       className="card-image"
                       src={user.photo}
                       alt="Avatar"
-                      style={{ width: 270, height: 350 }}
                     />
                     <div className="card-block">
                       <h4 className="card-title text-center">
@@ -90,7 +92,6 @@ function About() {
             </div>
           ))}
         </div>
-      </label>
       <form className="title_form">
         <h2 className="accent left accent-left"> &nbsp;&nbsp;Associates</h2>
       </form>
@@ -101,10 +102,10 @@ function About() {
             <div className="flip-card ">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img
+                  <img className="card-image"
+
                     src={user.photo}
                     alt="Avatar"
-                    style={{ width: 270, height: 350 }}
                   />
                   <div className="card-block">
                     <h4 className="card-title text-center">
@@ -135,3 +136,4 @@ function About() {
 }
 
 export default About;
+
