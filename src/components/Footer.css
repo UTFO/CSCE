@@ -17,15 +17,3 @@
 .custom-link:hover {
   opacity: 0.7; /* Adjust the opacity value to your preference */
 }
-
-.spacer {
-  aspect-ratio: 900/100;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.layer2 {
-  background-image: url('../assets/layeredwaves2.svg');
-}

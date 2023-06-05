@@ -64,7 +64,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="spacer layer1"></div>
+      <div className="spacer layer1"> </div>
       <a name="events">
         <div className="EventHolder">
           <div style={{ textAlign: 'center', paddingTop: 20 }}>

@@ -1,139 +1,178 @@
-import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
-import { FaInstagram, FaLinkedin, FaUser } from 'react-icons/fa';
-import Users from '../data/Users.json';
 import './About.css';
 
-import ReactCardFlip from 'react-card-flip';
+import users from '../data/Users.json';
 
-import React, { useState } from 'react';
+const About = () => {
+  // An example list of members
+  const members = users;
 
-function About() {
-  const [flipped, setFlip] = useState(false);
+  const leadCards = members
+    .filter((member) => member.role === 'Leadership')
+    .map((member, index) => (
+      <Col md={6} lg={4} key={index} className="mb-4">
+        <Card className="h-100 member-card text-white">
+          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Body>
+            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.position}</small>
+            </Card.Subtitle>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.discipline}</small>
+            </Card.Subtitle>
+          </Card.Body>
+          <Card.Body className="d-flex justify-content-center">
+            {member.linkedin && (
+              <Card.Link href={member.linkedin} className="icon-link">
+                <FontAwesomeIcon icon={faLinkedin} color="white" />
+              </Card.Link>
+            )}
+            {member.twitter && (
+              <Card.Link href={member.twitter} className="icon-link">
+                <FontAwesomeIcon icon={faTwitter} color="white" />
+              </Card.Link>
+            )}
+            {member.website && (
+              <Card.Link href={member.website} className="icon-link">
+                <FontAwesomeIcon icon={faGlobe} color="white" />
+              </Card.Link>
+            )}
+          </Card.Body>
+        </Card>
+      </Col>
+    ));
 
-  const filterExec = Users.filter((users) => users.id.includes('executive'));
+  const execCards = members
+    .filter((member) => member.role === 'Executive')
+    .map((member, index) => (
+      <Col md={6} lg={4} key={index} className="mb-4">
+        <Card className="h-100 member-card text-white">
+          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Body>
+            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.position}</small>
+            </Card.Subtitle>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.discipline}</small>
+            </Card.Subtitle>
+          </Card.Body>
+          <Card.Body className="d-flex justify-content-center">
+            {member.linkedin && (
+              <Card.Link href={member.linkedin} className="icon-link">
+                <FontAwesomeIcon icon={faLinkedin} color="white" />
+              </Card.Link>
+            )}
+            {member.twitter && (
+              <Card.Link href={member.twitter} className="icon-link">
+                <FontAwesomeIcon icon={faTwitter} color="white" />
+              </Card.Link>
+            )}
+            {member.website && (
+              <Card.Link href={member.website} className="icon-link">
+                <FontAwesomeIcon icon={faGlobe} color="white" />
+              </Card.Link>
+            )}
+          </Card.Body>
+        </Card>
+      </Col>
+    ));
 
-  const filterAso = Users.filter((users) => users.id.includes('associate'));
-
-  const test = (id, aux) => {
-    let lists = [];
-    for (let i = 0; i < aux.length; i++) {
-      if (aux[i].index == id) {
-        aux[id].flip = !flipped[id];
-      } else {
-        aux[i].flip = false;
-      }
-    }
-    for (let i = 0; i < aux.length; i++) {
-      lists.push(aux[i].flip);
-    }
-    setFlip(lists);
-    console.log(aux);
-  };
-  var cards = document.querySelectorAll('.card');
+  const assocCards = members
+    .filter((member) => member.role === 'Associate')
+    .map((member, index) => (
+      <Col md={6} lg={4} key={index} className="mb-4">
+        <Card className="h-100 member-card text-white">
+          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Body>
+            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.position}</small>
+            </Card.Subtitle>
+            <Card.Subtitle className="mb-2 lead">
+              <small>{member.discipline}</small>
+            </Card.Subtitle>
+          </Card.Body>
+          <Card.Body className="d-flex justify-content-center">
+            {member.linkedin && (
+              <Card.Link href={member.linkedin} className="icon-link">
+                <FontAwesomeIcon icon={faLinkedin} color="white" />
+              </Card.Link>
+            )}
+            {member.twitter && (
+              <Card.Link href={member.twitter} className="icon-link">
+                <FontAwesomeIcon icon={faTwitter} color="white" />
+              </Card.Link>
+            )}
+            {member.website && (
+              <Card.Link href={member.website} className="icon-link">
+                <FontAwesomeIcon icon={faGlobe} color="white" />
+              </Card.Link>
+            )}
+          </Card.Body>
+        </Card>
+      </Col>
+    ));
 
   return (
-    <div className="background">
-      <section id="about" className="px-5 py-2">
-        <h1 className="titles">About us</h1>
-
-        <h3 className="titles">
-          We are a networking club for civil engineering students. We help
-          students discover different career paths by connecting students to
-          mentors in the industry, hosting panels about different fields in
-          civil engineering, hold skills workshops, and help run career fair
-        </h3>
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <form className="title_form">
-        <h2 className="accent left accent-left"> &nbsp;&nbsp;Executives</h2>
-      </form>
-        <div className="row row-cols-5 px-5 mx-5 px-5 ">
-          {filterExec.map((user) => (
-            <div className="col-12 col-md-6 col-lg-4 ">
-              <div className="flip-card card mx-auto">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="card-image"
-                      src={user.photo}
-                      alt="Avatar"
-                    />
-                    <div className="card-block">
-                      <h4 className="card-title text-center">
-                        {' '}
-                        <br></br>
-                        {user.name}
-                      </h4>
-                      <h6 className="card-subtitle mb-2 text-muted text-center">
-                        {user.title}
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="flip-card-back">
-                    <h2> About me </h2>
-
-                    <p>{user.about}</p>
-                    <a href="https://www.linkedin.com/feed/">
-                      {' '}
-                      <FaLinkedin class="icon" size={47} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      <form className="title_form">
-        <h2 className="accent left accent-left"> &nbsp;&nbsp;Associates</h2>
-      </form>
-
-      <div className="row row-cols-5 px-5 mx-5 px-5">
-        {filterAso.map((user) => (
-          <div className="col-12 col-md-6 col-lg-4 ">
-            <div className="flip-card ">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img className="card-image"
-
-                    src={user.photo}
-                    alt="Avatar"
-                  />
-                  <div className="card-block">
-                    <h4 className="card-title text-center">
-                      <br></br>
-                      {user.name}
-                    </h4>
-                    <h6 className="card-subtitle mb-2 text-muted text-center">
-                      {user.title}
-                    </h6>
-                  </div>
-                </div>
-                <div className="flip-card-back">
-                  <h2> About me </h2>
-
-                  <p>{user.about}</p>
-                  <a href="https://www.linkedin.com/feed/">
-                    {' '}
-                    <FaLinkedin class="icon" size={47} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="about text-white">
+      <Container className="mt-5">
+        <Row className="mb-5">
+          <Col className="member-card">
+            <h1>Who Are We?</h1>
+            <p className="lead">
+              We are the University of Toronto student-ran branch of the
+              Canadian Society of Civil Engineers (CSCE). We are a networking
+              club for civil engineering students! We help students discover
+              different career paths by:
+              <ul>
+                <li>Connecting students to mentors in the industry.</li>
+                <li>
+                  Hosting panels about different fields in civil engineering.
+                </li>
+                <li>Holding skills workshops</li>
+                <li>Running our club booth in career/club fairs.</li>
+              </ul>
+              ...and more!
+            </p>
+          </Col>
+        </Row>
+        <Row className="mb-3">
+          <Col className="member-card text-center">
+            <h2>Leadership 🫅</h2>
+          </Col>
+        </Row>
+        <Row className="d-flex justify-content-center align-items-center">
+          {leadCards}
+        </Row>
+        <Row className="mb-3">
+          <Col className="member-card text-end">
+            <h2>🧑‍💼Executives</h2>
+          </Col>
+        </Row>
+        <Row className="d-flex justify-content-center align-items-center">
+          {execCards}
+        </Row>
+        <Row className="mb-3">
+          <Col className="member-card">
+            <h2>Associates 👷</h2>
+          </Col>
+        </Row>
+        <Row className="d-flex justify-content-center align-items-center">
+          {assocCards}
+        </Row>
+      </Container>
     </div>
   );
-}
+};
 
 export default About;
-

@@ -1,100 +1,167 @@
 [
   {
-    "id": "executive",
-    "title": "Co-President",
-    "name": "Aaditiya Karthik",
-    "photo": "../assets/member_portraits/Aaditya.jpeg"
+    "name": "Aaditya Karthik",
+    "role": "Leadership",
+    "position": "Co-President",
+    "discipline": "Civ 2T3 + PEY",
+    "bio": "Bio for Aaditya",
+    "imagePath": "./assets/member_portraits/Aaditya.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "Co-President",
     "name": "Adneen Mir",
-    "photo": "../assets/member_portraits/AdneenMir.jpeg"
+    "role": "Leadership",
+    "position": "Co-President",
+    "discipline": "Civ 2T3 + PEY",
+    "bio": "Bio of Adneen",
+    "imagePath": "./assets/member_portraits/AdneenMir.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "VP Logisitics",
     "name": "Janishan Jeyarajah",
-
-    "photo": "../assets/member_portraits/Janishan.jpeg"
+    "role": "Executive",
+    "position": "VP Logistics",
+    "discipline": "Civ 2T4",
+    "bio": "Bio of Janishan",
+    "imagePath": "./assets/member_portraits/Janishan.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "VP Academia",
     "name": "Angela Abdullahi",
-    "photo": "../assets/member_portraits/AngelaAbdullahi.jpeg"
+    "role": "Executive",
+    "position": "VP Academia",
+    "discipline": "Civ 2T3 + PEY",
+    "bio": "Bio of Angela",
+    "imagePath": "./assets/member_portraits/AngelaAbdullahi.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "Academics/Logistics Associate",
     "name": "Hoda Eissa",
-    "photo": "../assets/member_portraits/Hoda.jpeg"
+    "role": "Associate",
+    "position": "Academics & Logistics",
+    "discipline": "Civ/TrackOne 2T4 + PEY",
+    "bio": "Bio of Angela",
+    "imagePath": "./assets/member_portraits/Hoda.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "Mentorship Associate",
+    "name": "Ashar Syed",
+    "role": "Executive",
+    "position": "VP Professional Development",
+    "discipline": "Civ/TrackOne 2T4 + PEY",
+    "bio": "Bio of Ashar",
+    "imagePath": "./assets/member_portraits/AsharSyed.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
+  },
+  {
     "name": "Abdullah Muhammad",
-    "photo": "../assets/member_portraits/AbdullahM.jpeg"
+    "role": "Associate",
+    "position": "Mentorship",
+    "discipline": "Civ 2T4 + PEY",
+    "bio": "Bio of Abdullah",
+    "imagePath": "./assets/member_portraits/AbdullahM.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "Mentorship Associate",
     "name": "David Qian",
-    "photo": "../assets/member_portraits/David.jpeg"
+    "role": "Associate",
+    "position": "Mentorship",
+    "discipline": "Civ 2T6",
+    "bio": "Bio of David",
+    "imagePath": "./assets/member_portraits/David.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "VP Marketing",
     "name": "Jennifer Sunny",
-    "photo": "../assets/member_portraits/Jennifer.jpeg"
+    "role": "Executive",
+    "position": "VP Marketing",
+    "discipline": "Civ/TrackOne 2T4",
+    "bio": "Bio of Jennifer",
+    "imagePath": "./assets/member_portraits/Jennifer.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "Marketing Associate",
     "name": "Avleen Sindhar",
-
-    "photo": "../assets/member_portraits/Avleen.jpeg"
+    "role": "Associate",
+    "position": "Marketing",
+    "discipline": "ECE 2T5",
+    "bio": "Bio of Avleen",
+    "imagePath": "./assets/member_portraits/Avleen.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "VP Community ",
     "name": "Sadia Salwao Saika",
-
-    "photo": "../assets/member_portraits/Saika.jpeg"
+    "role": "Executive",
+    "position": "VP Community",
+    "discipline": "Civ 2T4",
+    "bio": "Bio of Sadia",
+    "imagePath": "./assets/member_portraits/SadiaSalwaoSaika.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "Community Associate",
     "name": "Simran Hafiz",
-
-    "photo": "../assets/member_portraits/Simran.jpeg"
+    "role": "Associate",
+    "position": "Mentorship",
+    "discipline": "Civ 2T4 + PEY",
+    "bio": "Bio of Simran",
+    "imagePath": "./assets/member_portraits/Simran.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "associate",
-    "title": "First Year Rep",
-    "name": "Yueqi Wang",
-
-    "photo": "../assets/member_portraits/Yueqi.jpeg"
-  },
-  {
-    "id": "asociate",
-    "title": "Second Year Rep",
     "name": "Zachary Chisamore",
-
-    "photo": "../assets/member_portraits/Zachary.jpeg"
+    "role": "Associate",
+    "position": "Second Year Rep",
+    "discipline": "Civ 2T5",
+    "bio": "Bio of Zach",
+    "imagePath": "./assets/member_portraits/Zachary.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "asociate",
-    "title": "PEY Consultant",
-    "name": "Meg Sarah Melendres",
-
-    "photo": "../assets/member_portraits/Meg.jpeg"
+    "name": "Yueqi Wang",
+    "role": "Associate",
+    "position": "First Year Rep",
+    "discipline": "Civ 2T6 + PEY",
+    "bio": "Bio of Yueqi",
+    "imagePath": "./assets/member_portraits/Yueqi.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   },
   {
-    "id": "executive",
-    "title": "VP Professional Development",
-    "name": "Asher Syed",
-
-    "photo": "../assets/member_portraits/AsharSyed.jpeg"
+    "name": "Meg Sara Melendres",
+    "role": "Executive",
+    "position": "PEY Consultant",
+    "discipline": "Civ 2T3 + PEY",
+    "bio": "Bio of Meg",
+    "imagePath": "./assets/member_portraits/Meg.jpeg",
+    "linkedin": "https://facebook.com/johndoe",
+    "twitter": "https://twitter.com/johndoe",
+    "website": "https://instagram.com/johndoe"
   }
 ]
