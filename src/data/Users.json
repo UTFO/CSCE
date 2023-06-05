@@ -3,99 +3,98 @@
     "id": "executive",
     "title": "Co-President",
     "name": "Aaditiya Karthik",
-    "photo": "../assets/Aaditya.jpeg"
-    
+    "photo": "../assets/member_portraits/Aaditya.jpeg"
   },
   {
     "id": "executive",
     "title": "Co-President",
     "name": "Adneen Mir",
-    "photo": "../assets/AdneenMir.jpeg"
+    "photo": "../assets/member_portraits/AdneenMir.jpeg"
   },
   {
     "id": "executive",
     "title": "VP Logisitics",
     "name": "Janishan Jeyarajah",
 
-    "photo": "../assets/Janishan.jpeg"
+    "photo": "../assets/member_portraits/Janishan.jpeg"
   },
   {
     "id": "executive",
     "title": "VP Academia",
     "name": "Angela Abdullahi",
-    "photo": "../assets/AngelaAbdullahi.jpeg"
+    "photo": "../assets/member_portraits/AngelaAbdullahi.jpeg"
   },
   {
     "id": "associate",
     "title": "Academics/Logistics Associate",
     "name": "Hoda Eissa",
-    "photo": "../assets/Hoda.jpeg"
+    "photo": "../assets/member_portraits/Hoda.jpeg"
   },
   {
     "id": "associate",
     "title": "Mentorship Associate",
     "name": "Abdullah Muhammad",
-    "photo": "../assets/AbdullahM.jpeg"
+    "photo": "../assets/member_portraits/AbdullahM.jpeg"
   },
   {
     "id": "associate",
     "title": "Mentorship Associate",
     "name": "David Qian",
-    "photo": "../assets/David.jpeg"
+    "photo": "../assets/member_portraits/David.jpeg"
   },
   {
     "id": "executive",
     "title": "VP Marketing",
     "name": "Jennifer Sunny",
-    "photo": "../assets/Jennifer.jpeg"
+    "photo": "../assets/member_portraits/Jennifer.jpeg"
   },
   {
     "id": "associate",
     "title": "Marketing Associate",
     "name": "Avleen Sindhar",
 
-    "photo": "../assets/Avleen.jpeg"
+    "photo": "../assets/member_portraits/Avleen.jpeg"
   },
   {
     "id": "executive",
     "title": "VP Community ",
     "name": "Sadia Salwao Saika",
 
-    "photo": "../assets/Saika.jpeg"
+    "photo": "../assets/member_portraits/Saika.jpeg"
   },
   {
     "id": "associate",
     "title": "Community Associate",
     "name": "Simran Hafiz",
 
-    "photo": "../assets/Simran.jpeg"
+    "photo": "../assets/member_portraits/Simran.jpeg"
   },
   {
     "id": "associate",
     "title": "First Year Rep",
     "name": "Yueqi Wang",
 
-    "photo": "../assets/Yueqi.jpeg"
+    "photo": "../assets/member_portraits/Yueqi.jpeg"
   },
   {
     "id": "asociate",
     "title": "Second Year Rep",
     "name": "Zachary Chisamore",
 
-    "photo": "../assets/Zachary.jpeg"
+    "photo": "../assets/member_portraits/Zachary.jpeg"
   },
   {
     "id": "asociate",
     "title": "PEY Consultant",
     "name": "Meg Sarah Melendres",
 
-    "photo": "../assets/Meg.jpeg"
+    "photo": "../assets/member_portraits/Meg.jpeg"
   },
   {
     "id": "executive",
     "title": "VP Professional Development",
     "name": "Asher Syed",
 
-    "photo": "../assets/AsharSyed.jpeg"
+    "photo": "../assets/member_portraits/AsharSyed.jpeg"
   }
 ]
