@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import './Mentorship.css';
 
@@ -24,7 +25,7 @@ function Mentorship() {
       <Container>
         <Row>
           <Col lg={6}>
-            <Card className="textcard">
+            <Card className="textcard shadow-lg">
               <Card.Body>
                 <h2>Industry Mentorship Program</h2>
                 <p>
@@ -62,19 +63,21 @@ function Mentorship() {
                   information soon.
                 </p>
                 <p>We look forward to connecting with you.</p>
+                <Image
+                  className="img-fluid"
+                  src="./assets/industrymixer.jpg"
+                  rounded
+                />
               </Card.Body>
             </Card>
           </Col>
           <Col lg={6}>
             <iframe
-              className="form"
+              className=""
               src="https://docs.google.com/forms/d/e/1FAIpQLSfI-9iRW-o_zewKhAqz5yD1UA9vp7w98QZu00H8jUE_RTN77w/viewform?embedded=true"
               style={{
                 width: '100%',
                 height: '3250px',
-                frameborder: '0',
-                marginheight: '0',
-                marginwidth: '0',
               }}
             >
               Loading…
