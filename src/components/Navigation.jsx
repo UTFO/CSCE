@@ -42,7 +42,7 @@ const Navigation = () => {
         <Navbar.Brand>
           <LinkContainer to="/">
             <img
-              src={'../assets/LogoNoWords.png'}
+              src={'./assets/logoCroppedWhiteFilled.svg'}
               className={
                 navbar ? 'NavLogoSmall img-fluid' : 'NavLogo img-fluid'
               }
