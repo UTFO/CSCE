@@ -3,10 +3,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useLocation } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
   const [navbar, setNavbar] = useState(false);
+  const location = useLocation();
+  console.log(location);
+
+  let fixedNavStyle = '';
+  console.log(location.pathname);
+
+  if (location.pathname === '/about') {
+    fixedNavStyle += 'dark';
+  }
 
   useEffect(() => {
     const changeNav = () => {
@@ -23,8 +33,8 @@ const Navigation = () => {
   return (
     <Navbar
       className={navbar ? 'Navbar shadow solid' : 'Navbar transparent'}
-      bg={navbar ? '' : ''}
-      variant="light"
+      bg={navbar ? 'light-subtle' : ''}
+      variant={navbar ? '' : fixedNavStyle}
       fixed="top"
       expand="lg"
     >

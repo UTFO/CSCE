@@ -20,7 +20,7 @@ const About = () => {
     .map((member, index) => (
       <Col md={6} lg={4} key={index} className="mb-4">
         <Card className="h-100 member-card text-white">
-          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Img src={member.imagePath} className="img-fluid" />
           <Card.Body>
             <Card.Title className="">{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
@@ -56,7 +56,7 @@ const About = () => {
     .map((member, index) => (
       <Col md={6} lg={4} key={index} className="mb-4">
         <Card className="h-100 member-card text-white">
-          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Img src={member.imagePath} className="img-fluid" />
           <Card.Body>
             <Card.Title className="">{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
@@ -92,7 +92,7 @@ const About = () => {
     .map((member, index) => (
       <Col md={6} lg={4} key={index} className="mb-4">
         <Card className="h-100 member-card text-white">
-          <Image src={member.imagePath} className="img-fluid" />
+          <Card.Img src={member.imagePath} className="img-fluid" />
           <Card.Body>
             <Card.Title className="">{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
@@ -102,7 +102,7 @@ const About = () => {
               <small>{member.discipline}</small>
             </Card.Subtitle>
           </Card.Body>
-          <Card.Body className="d-flex justify-content-center">
+          <Card.Body className="text-center">
             {member.linkedin && (
               <Card.Link href={member.linkedin} className="icon-link">
                 <FontAwesomeIcon icon={faLinkedin} color="white" />

@@ -31,8 +31,3 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-
-.Navbar.solid {
-  background-color: rgba(255, 255, 255, 1); /* or use any other color */
-  backdrop-filter: blur(1px); /* Apply blur */
-}
