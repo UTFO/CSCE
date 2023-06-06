@@ -57,9 +57,9 @@ function Mentorship() {
                   <li>...and more</li>
                 </ul>
                 <p>
-                  If you're interested in joining the program as a mentor or
-                  mentee, please fill out the form. We will be in touch with
-                  more information soon.
+                  If you're interested in joining the program as a mentee,
+                  please fill out the form. We will be in touch with more
+                  information soon.
                 </p>
                 <p>We look forward to connecting with you.</p>
               </Card.Body>
