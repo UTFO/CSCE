@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import {
   faBriefcase,
   faBurger,
@@ -17,6 +16,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Row from 'react-bootstrap/Row';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { usePopper } from 'react-popper';
+
 const EventCard = ({
   eventPoster,
   eventName,
