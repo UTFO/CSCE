@@ -65,29 +65,21 @@ const Home = () => {
       </div>
 
       <div className="spacer layer1"> </div>
+
       <a name="events">
-        <div className="EventHolder">
-          <div style={{ textAlign: 'center', paddingTop: 20 }}>
-            <h2 className="EventHolderTitle">Upcoming Events</h2>
-            <p
-              className="EventHolderTitle"
-              style={{
-                paddingTop: 0,
-                paddingBottom: 0,
-                paddingRight: '1em',
-                paddingLeft: '1em',
-                marginBottom: 0,
-              }}
-            >
+        <div className="EventHolder text-white container-fluid">
+          <div className="row">
+            <h2 className="col text-center">Upcoming Events</h2>
+          </div>
+          <div className="row">
+            <p className="col text-center">
               Check out some of our upcoming events
             </p>
           </div>
           <EventHolder />
         </div>
       </a>
-      {/* <div>
-        <img className="Landscape" src={LandscapeSvg} alt="Landscape" />
-      </div> */}
+
       <div className="spacer layer2"></div>
     </div>
   );

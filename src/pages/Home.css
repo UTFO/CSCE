@@ -7,7 +7,6 @@
 }
 
 .EventHolder {
-  width: 100%;
   /*#198754*/
   background-image: linear-gradient(to bottom right, #0d6e3f, #0d6e3f);
 }
@@ -17,36 +16,7 @@
   width: 3em;
 }
 
-.EventHolderTitle {
-  color: white;
-}
-
-.CardHolder {
-  padding-top: 20px;
-}
-
-.BottomCardHolder {
-  padding-bottom: 3rem;
-}
-
-.AllCardsHolder {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 2%;
-  width: 90vw;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
 @media only screen and (max-width: 1350px) {
-  .AllCardsHolder {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 2%;
-    width: 90vw;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
   .customCardClass {
     min-width: 150px;
     max-width: 1550px;
@@ -64,35 +34,7 @@
   text-align: center;
 }
 
-.AllCardsHolderOneCard {
-  display: grid;
-  grid-template-columns: auto;
-  column-gap: 2%;
-  width: 90vw;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.AllCardsHolderTwoCards {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 2%;
-  width: 90vw;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
 @media only screen and (max-width: 700px) {
-  .AllCardsHolder,
-  .AllCardsHolderTwoCards {
-    display: grid;
-    grid-template-columns: auto;
-    column-gap: 2%;
-    width: 90vw;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
   .customCardClass {
     min-width: 150px;
     max-width: 1550px;

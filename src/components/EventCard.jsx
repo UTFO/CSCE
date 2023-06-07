@@ -1,26 +1,24 @@
 /* eslint-disable prettier/prettier */
+import {
+  faBriefcase,
+  faBurger,
+  faCircleInfo,
+  faMoneyBillTrendUp,
+  faPeopleGroup,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { usePopper } from 'react-popper';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faPeopleGroup,
-  faCircleInfo,
-  faBriefcase,
-  faMoneyBillTrendUp,
-  faBurger,
-} from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
-import './EventCard.css';
-import '../App.css'
-import foodImg from '../assets/buns-bun-svgrepo-com.svg';
-import infoImg from '../assets/lecture-lectern-svgrepo-com.svg';
-import fundraiserImg from '../assets/donations-svgrepo-com.svg';
-import networkingImg from '../assets/networking-svgrepo-com.svg';
-
+import Row from 'react-bootstrap/Row';
+import Tooltip from 'react-bootstrap/Tooltip';
+import { usePopper } from 'react-popper';
 const EventCard = ({
+  eventPoster,
   eventName,
   eventDate,
   eventStartTime,
@@ -95,9 +93,7 @@ const EventCard = ({
   const tooltipList = iconTitleList.map((iconLabel) => {
     return (
       // eslint-disable-next-line react/jsx-key
-      <div ref={setPopperElement} style={styles.popper} {...attributes.popper}>
-        {iconLabel}
-      </div>
+      <Tooltip ref={setPopperElement}>{iconLabel}</Tooltip>
     );
   });
 
@@ -106,87 +102,62 @@ const EventCard = ({
   // add left padding to every icon except the last
   for (let i = 0; i < iconList.length - 1; i++) {
     overlayList.push(
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 250, hide: 0 }}
-        overlay={tooltipList[i]}
-      >
-        <div className="iconHolder">{iconList[i]}</div>
+      <OverlayTrigger placement="top" overlay={tooltipList[i]}>
+        <div className="pe-2">{iconList[i]}</div>
       </OverlayTrigger>
     );
   }
   // add the last icon without padding
   overlayList.push(
-    <OverlayTrigger
-      placement="top"
-      delay={{ show: 250, hide: 0 }}
-      overlay={tooltipList[iconList.length - 1]}
-    >
+    <OverlayTrigger placement="top" overlay={tooltipList[iconList.length - 1]}>
       <div>{iconList[iconList.length - 1]}</div>
     </OverlayTrigger>
   );
 
-  //determine image
-  const index = Math.floor(Math.random() * eventTypes.length)
-  const imgString = eventTypes[index]
-  let imgLink;
-  switch (imgString) {
-    case ("Information Session" || "Panel"):
-      imgLink = infoImg;
-      break;
-    case ("Food Provided"):
-      imgLink = foodImg
-      break;
-    case ("Fundraiser"):
-      imgLink = fundraiserImg
-      break;
-    case ("Career Fair"):
-      imgLink = networkingImg
-      break;
-    default:
-      imgLink = infoImg;
-  }
-
   return (
-    <Card className="bg-light-subtle customCardClass enlarge">
-      <Card.Img variant="top" src={imgLink} style={{height:"auto", width:"100%", objectFit:"contain", borderRadius: "25px 25px 0 0"}}/>
-      <Card.Body style={{paddingBottom: "1.5em"}}>
-        <div className="customCardHeader">
-          <Card.Title>{eventName}</Card.Title>
-          <div style={{ display: 'inline-flex' }}>{overlayList}</div>
-        </div>
-        <Card.Subtitle className="mb-2 text-muted">{eventDate} | {eventStartTime} - {eventEndTime} EDT</Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">
-          {eventLocation}
-        </Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">
-          {eventAddress}
-        </Card.Subtitle>
-        <Card.Text>{eventDescription}</Card.Text>
-        <Button
-          variant="primary"
-          href={eventRegisterLink}
-          className="btn btn-success btn-lg px-3 me-md-2 EventCardButton"
-          target="_blank"
-          style={{ display: eventRegisterLink === '#' ? 'none' : 'inline' }}
-        >
-          Register
-        </Button>
-      </Card.Body>
-    </Card>
+    <Col md={6} lg={4} className="mb-4">
+      <Card className="h-100 bg-light-subtle">
+        <Image src={eventPoster} fluid />
+        <Card.Body style={{ paddingBottom: '1.5em' }}>
+          <Row className="pb-3">
+            <Col xl={6} lg={12} className="d-flex align-items-center">
+              <Card.Title>{eventName}</Card.Title>
+            </Col>
+            <Col
+              xl={6}
+              lg={12}
+              className="d-flex align-items-center justify-content-evenly"
+            >
+              <Card.Subtitle className="d-flex mb-2">
+                {overlayList}
+              </Card.Subtitle>
+            </Col>
+          </Row>
+
+          <Card.Subtitle className="mb-2">
+            <small>
+              {eventDate} | {eventStartTime} - {eventEndTime} EST
+            </small>
+          </Card.Subtitle>
+          <Card.Subtitle className="mb-2">
+            <small>{eventLocation}</small>
+          </Card.Subtitle>
+          <Card.Subtitle className="mb-2">
+            <small>{eventAddress}</small>
+          </Card.Subtitle>
+          <Card.Text>{eventDescription}</Card.Text>
+          <Button
+            variant="success"
+            href={eventRegisterLink}
+            target="_blank"
+            style={{ display: eventRegisterLink === '#' ? 'none' : '' }}
+          >
+            Register
+          </Button>
+        </Card.Body>
+      </Card>
+    </Col>
   );
 };
-
-EventCard.propTypes = {
-  eventName: PropTypes.string,
-  eventDate: PropTypes.string,
-  eventEndTime: PropTypes.string,
-  eventStartTime: PropTypes.string,
-  eventLocation: PropTypes.string,
-  eventAddress: PropTypes.string,
-  eventDescription: PropTypes.string,
-  eventTypes: PropTypes.array,
-  eventRegisterLink: PropTypes.string 
-}
 
 export default EventCard;

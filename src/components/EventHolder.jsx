@@ -1,3 +1,6 @@
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import '../App.css';
 import EventCard from '../components/EventCard';
 import Events from '../data/Events.json';
@@ -45,19 +48,18 @@ const EventHolder = () => {
     let eventCardList = [];
     for (let i = 0; i < eventData.length; i++) {
       eventCardList.push(
-        <div className={'CardHolder'}>
-          <EventCard
-            eventName={eventData[i].eventName}
-            eventDate={eventData[i].eventDate}
-            eventStartTime={eventData[i].eventStartTime}
-            eventEndTime={eventData[i].eventEndTime}
-            eventDescription={eventData[i].eventDescription}
-            eventRegisterLink={eventData[i].eventRegisterLink}
-            eventTypes={eventData[i].eventTypes}
-            eventLocation={eventData[i].eventLocation}
-            eventAddress={eventData[i].eventAddress}
-          />
-        </div>
+        <EventCard
+          eventPoster={eventData[i].eventPoster}
+          eventName={eventData[i].eventName}
+          eventDate={eventData[i].eventDate}
+          eventStartTime={eventData[i].eventStartTime}
+          eventEndTime={eventData[i].eventEndTime}
+          eventDescription={eventData[i].eventDescription}
+          eventRegisterLink={eventData[i].eventRegisterLink}
+          eventTypes={eventData[i].eventTypes}
+          eventLocation={eventData[i].eventLocation}
+          eventAddress={eventData[i].eventAddress}
+        />
       );
     }
     //return list of cards
@@ -72,21 +74,18 @@ const EventHolder = () => {
     case 0:
       holderClassName = 'NoCards';
       break;
-    case 1:
-      holderClassName = 'AllCardsHolderOneCard';
-      break;
-    case 2:
-      holderClassName = 'AllCardsHolderTwoCards';
-      break;
-    default:
-      holderClassName = 'AllCardsHolder';
-      break;
   }
 
   let element;
 
   if (holderClassName != 'NoCards') {
-    element = <div className={holderClassName}>{UpcomingEventCardList}</div>;
+    element = (
+      <Container>
+        <Row className="d-flex justify-content-center">
+          {UpcomingEventCardList}
+        </Row>
+      </Container>
+    );
   } else {
     element = (
       <div className={holderClassName}>

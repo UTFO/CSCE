@@ -27,7 +27,7 @@ const About = () => {
             roundedCircle
           />
           <Card.Body>
-            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Title>{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
               <small>{member.position}</small>
             </Card.Subtitle>
@@ -68,7 +68,7 @@ const About = () => {
             roundedCircle
           />
           <Card.Body>
-            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Title>{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
               <small>{member.position}</small>
             </Card.Subtitle>
@@ -109,7 +109,7 @@ const About = () => {
             roundedCircle
           />
           <Card.Body>
-            <Card.Title className="">{member.name}</Card.Title>
+            <Card.Title>{member.name}</Card.Title>
             <Card.Subtitle className="mb-2 lead">
               <small>{member.position}</small>
             </Card.Subtitle>
@@ -167,25 +167,19 @@ const About = () => {
             <h2>Leadership 🫅</h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-center align-items-center">
-          {leadCards}
-        </Row>
+        <Row className="d-flex justify-content-center">{leadCards}</Row>
         <Row className="mb-3">
           <Col className="member-card shadow text-end">
             <h2>🧑‍💼Executives</h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-center align-items-center">
-          {execCards}
-        </Row>
+        <Row className="d-flex justify-content-center ">{execCards}</Row>
         <Row className="mb-3">
           <Col className="member-card shadow ">
             <h2>Associates 👷</h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-center align-items-center">
-          {assocCards}
-        </Row>
+        <Row className="d-flex justify-content-center ">{assocCards}</Row>
       </Container>
     </div>
   );
