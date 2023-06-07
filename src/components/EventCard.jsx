@@ -117,18 +117,12 @@ const EventCard = ({
   return (
     <Col md={6} lg={4} className="mb-4">
       <Card className="h-100 bg-light-subtle">
-        <Image src={eventPoster} fluid />
+        <Card.Img src={eventPoster} fluid />
         <Card.Body style={{ paddingBottom: '1.5em' }}>
+          <Card.Title className="pb-1">{eventName}</Card.Title>
           <Row className="pb-3">
             <Col xl={6} lg={12} className="d-flex align-items-center">
-              <Card.Title>{eventName}</Card.Title>
-            </Col>
-            <Col
-              xl={6}
-              lg={12}
-              className="d-flex align-items-center justify-content-evenly"
-            >
-              <Card.Subtitle className="d-flex mb-2">
+              <Card.Subtitle className="d-flex mb-1">
                 {overlayList}
               </Card.Subtitle>
             </Col>
