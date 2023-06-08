@@ -26,10 +26,11 @@ const Join = () => {
               team environment.
             </p>
             <p>
-              Applications: We typically recruit for new VPs and associates at
-              the beginning of the school year. Any other recruitments
-              throughout the year will be announced on our Instagram page. If
-              you have any questions or inquiries, please feel free to{' '}
+              <strong>Applications:</strong> We typically recruit for new VPs
+              and associates at the beginning of the school year. Any other
+              recruitments throughout the year will be announced on our
+              Instagram page. If you have any questions or inquiries, please
+              feel free to{' '}
               <LinkContainer to="/contact">
                 <a>contact us</a>
               </LinkContainer>
