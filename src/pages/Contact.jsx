@@ -68,9 +68,9 @@ const Contact = () => {
           <Container>
             <Row>
               <Col>
-                <h2>Connect with Us</h2>
+                <h2>Connect with Us!</h2>
                 <p>
-                  As part of our university community, we value your input. Here
+                  As part of our civil engineering, we value your input. Here
                   are some reasons you might want to reach out:
                 </p>
                 <ul>
@@ -97,7 +97,9 @@ const Contact = () => {
                 </ul>
                 <p>
                   Please fill out the form with your details and your message.
-                  We aim to respond within 3-5 business days.
+                  We will aim to respond within 2-3 business days. In the mean
+                  time please follow our Instagram and Facebook pages linked
+                  below!
                 </p>
                 <p>Thank you for reaching out.</p>
               </Col>
