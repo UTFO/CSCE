@@ -16,7 +16,7 @@ const Navigation = () => {
   let buttonStyle = '';
   console.log(location.pathname);
 
-  if (location.pathname === '/about') {
+  if (location.pathname === '/about' || location.pathname === '/employers') {
     fixedNavStyle += 'dark shadow';
     buttonStyle = 'dark';
   } else {
@@ -74,12 +74,12 @@ const Navigation = () => {
             <LinkContainer to="/join">
               <Nav.Link>Join Us</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/employers">
+              <Nav.Link>For Employers</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/mentorship">
               <Nav.Link>Mentorship</Nav.Link>
             </LinkContainer>
-            {/* <LinkContainer to="/employers">
-              <Nav.Link>For Employers</Nav.Link>
-            </LinkContainer> */}
             <LinkContainer to="/contact">
               <Nav.Link>
                 <Button variant={navbar ? 'success' : buttonStyle}>

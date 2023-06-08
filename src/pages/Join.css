@@ -11,4 +11,5 @@
   ) !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
+  border-radius: 20px;
 }
