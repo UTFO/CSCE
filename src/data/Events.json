@@ -1,13 +1,13 @@
 [
   {
-    "eventPoster": "./assets/event_posters/donations-svgrepo-com.svg",
-    "eventName": "Hi my name is Osman",
+    "eventPoster": "./assets/event_posters/charitybakesale.jpg",
+    "eventName": "Bake Sale!!!!",
     "eventDate": "July 25, 2023",
     "eventStartTime": "5:00 p.m.",
     "eventEndTime": "8:00 p.m.",
     "eventLocation": "BA1130",
     "eventAddress": "420 St. George St.",
-    "eventDescription": "Join us on jan 25 to learn about CSCE.",
+    "eventDescription": "",
     "eventTypes": [
       "Information Session",
       "Panel",
@@ -25,7 +25,7 @@
     "eventEndTime": "8:00 p.m.",
     "eventLocation": "Myhal Building Room 45",
     "eventAddress": "67 Doe Street",
-    "eventDescription": "Join us on jan 25 to learn about CSCE.",
+    "eventDescription": "",
     "eventTypes": ["Information Session", "Panel", "Career Fair"],
     "eventRegisterLink": "https://www.google.com/"
   }
