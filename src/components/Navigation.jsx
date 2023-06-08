@@ -71,6 +71,9 @@ const Navigation = () => {
             <LinkContainer to="/about">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/join">
+              <Nav.Link>Join Us</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/mentorship">
               <Nav.Link>Mentorship</Nav.Link>
             </LinkContainer>

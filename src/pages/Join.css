@@ -1,4 +1,14 @@
 .join {
   padding-top: 150px;
-  min-height: 100vh;
+  min-height: 90vh;
+}
+
+.join-info {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
 }
