@@ -70,8 +70,8 @@ const Contact = () => {
               <Col>
                 <h2>Connect with Us!</h2>
                 <p>
-                  As part of our civil engineering, we value your input. Here
-                  are some reasons you might want to reach out:
+                  As part of our engineering community, we value your input.
+                  Here are some reasons you might want to reach out:
                 </p>
                 <ul>
                   <li>
