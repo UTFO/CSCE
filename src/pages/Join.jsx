@@ -1,8 +1,8 @@
 import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import { LinkContainer } from 'react-router-bootstrap';
 import RoleCard from '../components/RoleCard.jsx'; // import the RoleCard component
@@ -35,10 +35,41 @@ const Join = () => {
               </LinkContainer>
               .
             </p>
+            {/* <Carousel>
+              <Carousel.Item>
+                <Image
+                  className="d-block w-100"
+                  src="./assets/guestspeakers.jpg"
+                  alt="First slide"
+                  fluid
+                />
+                <Carousel.Caption>
+                  <h3>First slide label</h3>
+                  <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  className="d-block w-100"
+                  src="./assets/industrymixer.jpg"
+                  alt="Second slide"
+                  fluid
+                />
+
+                <Carousel.Caption>
+                  <h3>Second slide label</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel> */}
           </Col>
         </Row>
         <Row>
-          <Col className="mb-3 join-info">
+          <Col className="mb-3 mt-3 join-info">
             <h2>Roles & Responsibilities:</h2>
             <Accordion className="join-info">
               {roles.map((role, index) => (
