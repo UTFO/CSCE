@@ -84,3 +84,42 @@
 .layer2 {
   background-image: url('../assets/layeredwaves2.svg');
 }
+
+.paragraph {
+  color: white;
+}
+
+.paragraph .link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: margin 0.25s;
+}
+
+.paragraph .link svg {
+  width: 3em;
+  height: 40px;
+  position: absolute;
+  left: 55%;
+  bottom: 0;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: yellow;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: 69px 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease 0s, stroke-dasharray 0.35s;
+}
+
+.paragraph .link:hover {
+  margin: 0 4px;
+  color: white;
+  transition: stroke 0.25s ease 0.1s;
+}
+
+.paragraph .link:hover svg {
+  stroke: yellow;
+  stroke-dasharray: 180px 278px;
+}
