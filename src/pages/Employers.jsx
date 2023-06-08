@@ -42,6 +42,7 @@ const Employers = () => {
               <LinkContainer to="/contact">
                 <a>contact us</a>
               </LinkContainer>
+              .
             </p>
           </Col>
         </Row>
