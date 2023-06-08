@@ -6,16 +6,15 @@ import {
   faPeopleGroup,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Row from 'react-bootstrap/Row';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { usePopper } from 'react-popper';
+import './EventCard.css';
 
 const EventCard = ({
   eventPoster,
@@ -116,7 +115,7 @@ const EventCard = ({
 
   return (
     <Col md={6} lg={4} className="mb-4">
-      <Card className="h-100 bg-light-subtle">
+      <Card className="h-100 event-card shadow text-white">
         <Card.Img src={eventPoster} fluid />
         <Card.Body style={{ paddingBottom: '1.5em' }}>
           <Card.Title className="pb-1">{eventName}</Card.Title>
@@ -141,7 +140,7 @@ const EventCard = ({
           </Card.Subtitle>
           <Card.Text>{eventDescription}</Card.Text>
           <Button
-            variant="success"
+            variant="dark"
             href={eventRegisterLink}
             target="_blank"
             style={{ display: eventRegisterLink === '#' ? 'none' : '' }}

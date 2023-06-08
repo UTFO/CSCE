@@ -65,33 +65,12 @@
 
 .btn-events {
   color: #0d6e3f;
-  display: flex;
-  align-items: center;
-  border: none;
-  padding: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
-.btn-events:hover svg {
-  margin-left: 25px;
+.btn-events:hover {
   color: #212529 !important;
-}
-
-.btn-events svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-
-.custom-link-home {
-  color: inherit; /* This will make the link color the same as the surrounding text */
-  text-decoration: none; /* This will remove the underline */
-  transition: opacity 0.3s; /* This will make the opacity change smoothly */
-}
-
-.custom-link-home:hover {
-  color: #212529 !important;
-  opacity: 0.7; /* Adjust the opacity value to your preference */
+  transition: 0.5s ease;
 }
 
 .spacer {

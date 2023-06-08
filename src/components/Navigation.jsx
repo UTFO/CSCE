@@ -74,9 +74,9 @@ const Navigation = () => {
             <LinkContainer to="/mentorship">
               <Nav.Link>Mentorship</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/employers">
+            {/* <LinkContainer to="/employers">
               <Nav.Link>For Employers</Nav.Link>
-            </LinkContainer>
+            </LinkContainer> */}
             <LinkContainer to="/contact">
               <Nav.Link>
                 <Button variant={navbar ? 'success' : buttonStyle}>

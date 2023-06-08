@@ -1,12 +1,17 @@
+import {
+  faArrowCircleDown,
+  faChevronCircleDown,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import { IconContext } from 'react-icons';
-import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
 import EventHolder from '../components/EventHolder';
-import Events from '../data/Events.json';
 import './Home.css';
 
 const Home = () => {
+  const [hovered, setHovered] = useState(false);
   return (
     <div className="home">
       <div className="hero page-content">
@@ -21,6 +26,7 @@ const Home = () => {
                 loading="lazy"
               />
             </div>
+
             <div className="col-lg-6">
               <h1 className="display-5 lh-1 mb-3">Learn. Develop. Connect.</h1>
               <p className="lead">
@@ -44,21 +50,24 @@ const Home = () => {
                   </button>
                 </LinkContainer>
               </div>
-
-              <button type="button" className="btn btn-events">
+              <p className="pt-3 ">
                 <a
-                  className="mt-4 custom-link-home fw-semibold"
+                  className="fw-semibold d-flex align-items-center"
                   href="#events"
                   style={{ textDecoration: 'None', color: 'green' }}
                 >
-                  <IconContext.Provider
-                    value={{ color: '#0d6e3f', size: '2rem' }}
-                  >
-                    Check out our featured events!
-                    <BsFillArrowDownCircleFill />
+                  <IconContext.Provider>
+                    Check out our upcoming events!
+                    <FontAwesomeIcon
+                      className="ps-2 btn-events"
+                      onMouseEnter={() => setHovered(true)}
+                      onMouseLeave={() => setHovered(false)}
+                      icon={hovered ? faArrowCircleDown : faChevronCircleDown}
+                      size="2x"
+                    />
                   </IconContext.Provider>
                 </a>
-              </button>
+              </p>
             </div>
           </div>
         </div>
