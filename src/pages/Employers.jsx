@@ -48,7 +48,7 @@ const Employers = () => {
         </Row>
         <Row className="employer-card shadow-lg pt-3 justify-content-md-center">
           <p className="text-center mb-4">
-            We are proud to have previously worked with these past employers:
+            We are proud to have previously worked with these employers:
           </p>
           {companies.map((company, idx) => (
             <Col key={idx} sm={12} md={5} lg={2} className="px-4 my-3">
