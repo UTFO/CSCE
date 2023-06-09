@@ -14,13 +14,16 @@ const Navigation = () => {
 
   let fixedNavStyle = '';
   let buttonStyle = '';
+  let logoWords = '';
   console.log(location.pathname);
 
   if (location.pathname === '/about' || location.pathname === '/employers') {
     fixedNavStyle += 'dark shadow';
     buttonStyle = 'dark';
+    logoWords = './assets/LogoWordsOnlyWhite.png';
   } else {
     buttonStyle = 'success';
+    logoWords = './assets/LogoWordsOnly.png';
   }
 
   useEffect(() => {
@@ -55,7 +58,7 @@ const Navigation = () => {
           </LinkContainer>
           <LinkContainer to="/">
             <img
-              src={'../assets/LogoWordsOnly.png'}
+              src={logoWords}
               className={
                 navbar ? 'logoWordsDisabled img-fluid' : 'logoWords img-fluid'
               }
