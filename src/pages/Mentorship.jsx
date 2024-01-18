@@ -74,7 +74,7 @@ function Mentorship() {
           <Col lg={6}>
             <iframe
               className=""
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfI-9iRW-o_zewKhAqz5yD1UA9vp7w98QZu00H8jUE_RTN77w/viewform?embedded=true"
+              src="https://forms.gle/Dwk1ggR9NJtmor4T7"
               style={{
                 width: '100%',
                 height: '3250px',
