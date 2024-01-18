@@ -27,14 +27,14 @@
     "position": "VP Academia",
     "discipline": "Civ 2T6",
     "bio": "Bio",
-    "imagePath": "",
+    "imagePath": "./assets/member_portraits/wael.jpeg",
     "linkedin": "",
     "twitter": "",
     "website": ""
   },
   {
     "name": "Hoda Eissa",
-    "role": "Leadership",
+    "role": "Executive",
     "position": "VP Outreach",
     "discipline": "Civ/TrackOne 2T4 + PEY",
     "bio": "Bio",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Abdullah Muhammad",
-    "role": "Leadership",
+    "role": "Executive",
     "position": "VP Professional Development",
     "discipline": "Civ/TrackOne 2T4 + PEY",
     "bio": "Bio of Ashar",
@@ -56,11 +56,11 @@
   },
   {
     "name": "David Qian",
-    "role": "Leadership",
+    "role": "Executive",
     "position": "VP Finance",
     "discipline": "Civ 2T6",
     "bio": "Bio of David",
-    "imagePath": "./assets/member_portraits/David.jpeg",
+    "imagePath": "./assets/member_portraits/david.jpeg",
     "linkedin": "",
     "twitter": "",
     "website": ""
@@ -93,9 +93,9 @@
     "position": "",
     "discipline": "Civ 2T7",
     "bio": "Bio",
-    "imagePath": "",
+    "imagePath": "./assets/member_portraits/lucasxie.jpeg",
     "linkedin": "https://facebook.com/johndoe",
     "twitter": "",
     "website": ""
-  },
+  }
 ]
