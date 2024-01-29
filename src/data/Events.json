@@ -2,17 +2,17 @@
   {
     "eventPoster": "./assets/event_posters/charitybakesale.jpg",
     "eventName": "Bake Sale!!!!",
-    "eventDate": "February 6, 2024",
+    "eventDate": "February 06, 2024",
     "eventStartTime": "6:30 p.m.",
     "eventEndTime": "7:30 p.m.",
     "eventLocation": "Zoom",
     "eventAddress": "Online",
-    "eventDescription": "",
+    "eventDescription": "fgdgfdgdf",
     "eventTypes": [
       "Information Session",
       "Panel"
     ],
-    "eventRegisterLink": "#"
+    "eventRegisterLink":"https://www.google.com/"
   },
   {
     "eventPoster": "./assets/event_posters/buns-bun-svgrepo-com.svg",
