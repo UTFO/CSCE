@@ -2,18 +2,15 @@
   {
     "eventPoster": "./assets/event_posters/charitybakesale.jpg",
     "eventName": "Bake Sale!!!!",
-    "eventDate": "May 25, 2023",
-    "eventStartTime": "5:00 p.m.",
-    "eventEndTime": "8:00 p.m.",
-    "eventLocation": "BA1130",
-    "eventAddress": "420 St. George St.",
+    "eventDate": "February 6, 2024",
+    "eventStartTime": "6:30 p.m.",
+    "eventEndTime": "7:30 p.m.",
+    "eventLocation": "Zoom",
+    "eventAddress": "Online",
     "eventDescription": "",
     "eventTypes": [
       "Information Session",
-      "Panel",
-      "Career Fair",
-      "Fundraiser",
-      "Food Provided"
+      "Panel"
     ],
     "eventRegisterLink": "#"
   },
