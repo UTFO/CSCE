@@ -1,18 +1,31 @@
 [
   {
+<<<<<<< Updated upstream
     "eventPoster": "./assets/event_posters/charitybakesale.jpg",
     "eventName": "Bake Sale!!!!",
+=======
+    "eventPoster": "./assets/event_posters/2024_Research_Panel.jpg",
+    "eventName": "CSCE Research Panel",
+>>>>>>> Stashed changes
     "eventDate": "February 06, 2024",
     "eventStartTime": "6:30 p.m.",
     "eventEndTime": "7:30 p.m.",
     "eventLocation": "Zoom",
     "eventAddress": "Online",
+<<<<<<< Updated upstream
     "eventDescription": "fgdgfdgdf",
+=======
+    "eventDescription": "Join us on an hour-long online information session, exploring various research aspects, discovering opportunities, and gaining insights into potential experiences. To sign up, fill out the form in our bio!📚 #CivilEngineering #ResearchExploration #CSCE",
+>>>>>>> Stashed changes
     "eventTypes": [
       "Information Session",
       "Panel"
     ],
+<<<<<<< Updated upstream
     "eventRegisterLink":"https://www.google.com/"
+=======
+    "eventRegisterLink": "https://docs.google.com/forms/d/e/1FAIpQLScnpEAROFV3qulT6VLBTzjNwztOUavusV2ufe3S-mA25jMVkA/viewform?usp=sf_link"
+>>>>>>> Stashed changes
   },
   {
     "eventPoster": "./assets/event_posters/buns-bun-svgrepo-com.svg",
