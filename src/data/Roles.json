@@ -1,7 +1,15 @@
 [
   {
     "role": "President",
-    "description": "The role of president involves guiding the club in the correct direction in order to reach club goals, aiding the team to execute needed duties, writing club reports. They are responsible for acting as the aliason to CSCE national and regional and recruiting the executive team, associates and consultants.",
+    "description": """ - Recruits the executive team, associates, and consultants <br>
+    - Creates high level goals for the club and its direction
+    - Informs and empowers all members to execute their duties
+    - Manages distribution and execution of responsibilities
+    - Acts as a liaison to CSCE national and regional
+    - Prepares the interim and final CSCE club reports
+    - Ensures sustainability of club and its presidency
+    - Prepares the club transition report for the next year
+    """,
     "eventKey": "0"
   },
   {

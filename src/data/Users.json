@@ -1,101 +1,24 @@
 [
   {
-    "name": "Janishan Jeyarajah",
+    "name": "Hoda Eissa",
     "role": "Leadership",
     "position": "Co-President",
     "discipline": "Civ 2T4 + PEY",
-    "bio": "Bio for Aadsfadfasdfsdaitya",
-    "imagePath": "./assets/member_portraits/Janishan.jpeg",
-    "linkedin": "https://facebook.com/johndoe",
+    "bio": "Bio for Hoda",
+    "imagePath": "./assets/member_portraits/Hoda.jpeg",
+    "linkedin": "https://www.linkedin.com/in/hoda-eissa-b26621215/",
     "twitter": "",
     "website": "https://instagram.com/johndoe"
   },
   {
-    "name": "Ashar Syed",
+    "name": "Jennifer Sunny",
     "role": "Leadership",
     "position": "Co-President",
     "discipline": "Civ 2T4 + PEY",
     "bio": "Bio of Adneen",
-    "imagePath": "./assets/member_portraits/AsharSyed.jpeg",
-    "linkedin": "https://facebook.com/johndoe",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "Wael Halabi",
-    "role": "Executive",
-    "position": "VP Academia",
-    "discipline": "Civ 2T6",
-    "bio": "Bio",
-    "imagePath": "./assets/member_portraits/wael.jpeg",
-    "linkedin": "",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "Hoda Eissa",
-    "role": "Executive",
-    "position": "VP Outreach",
-    "discipline": "Civ/TrackOne 2T4 + PEY",
-    "bio": "Bio",
-    "imagePath": "./assets/member_portraits/Hoda.jpeg",
-    "linkedin": "",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "Abdullah Muhammad",
-    "role": "Executive",
-    "position": "VP Professional Development",
-    "discipline": "Civ/TrackOne 2T4 + PEY",
-    "bio": "Bio of Ashar",
-    "imagePath": "./assets/member_portraits/AbdullahM.jpeg",
-    "linkedin": "",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "David Qian",
-    "role": "Executive",
-    "position": "VP Finance",
-    "discipline": "Civ 2T6",
-    "bio": "Bio of David",
-    "imagePath": "./assets/member_portraits/David.jpg",
-    "linkedin": "",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "Jennifer Sunny",
-    "role": "Executive",
-    "position": "VP Marketing",
-    "discipline": "Civ/TrackOne 2T4",
-    "bio": "Bio of Jennifer",
     "imagePath": "./assets/member_portraits/Jennifer.jpeg",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/sunnyjennifer/",
     "twitter": "",
     "website": ""
   },
-  {
-    "name": "Yueqi Wang",
-    "role": "Executive",
-    "position": "VP Community",
-    "discipline": "Civ 2T6",
-    "bio": "Bio",
-    "imagePath": "./assets/member_portraits/Yueqi.jpeg",
-    "linkedin": "",
-    "twitter": "",
-    "website": ""
-  },
-  {
-    "name": "Lucas Xie",
-    "role": "Associate",
-    "position": "",
-    "discipline": "Civ 2T7",
-    "bio": "Bio",
-    "imagePath": "./assets/member_portraits/lucasxie.jpeg",
-    "linkedin": "https://facebook.com/johndoe",
-    "twitter": "",
-    "website": ""
-  }
 ]
