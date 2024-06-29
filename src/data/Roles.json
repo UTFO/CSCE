@@ -1,62 +1,120 @@
 [
   {
     "role": "President",
-    "description": "- Recruits the executive team, associates, and consultants <br>a",
+    "description": [
+      "Recruits the executive team, associates, and consultants",
+      "Creates high level goals for the club and its direction",
+      "Informs and empowers all members to execute their duties",
+      "Manages distribution and execution of responsibilities",
+      "Acts as a liaison to CSCE national and regional",
+      "Prepares the interim and final CSCE club reports",
+      "Ensures sustainability of club and its presidency",
+      "Prepares the club transition report for the next year"],
     "eventKey": "0"
   },
   {
-    "role": "VP Finance",
-    "description": "Submit funding applications and documents in accordance with the appropriate deadlines. Manages, tracks, and balances the chapter budget throughout the school year through tabulating revenue and expenses as accrued. Works alongside the VP External to create sponsorship packages and incentives with engineering companies.",
-    "eventKey": "1"
-  },
-  {
-    "role": "VP Logistics",
-    "description": "Organizes logistics for events and chapter initiatives (e.g. room bookings, catering, audio/visual equipment). Ensures that chapter events are planned in a timely manner. Manages club assets and rentals (lockers, temporary office spaces, club merchandise). Supports President with event planning and other operational tasks.",
+    "role": "VP Academia",
+    "description": [
+      "Manages an undergraduate research opportunity program with civil engineering professors",
+      "Increase familiarity and visibility of graduate studies and research to civil engineering at the University of Toronto",
+      "Organize an undergraduate and graduate research showcase"
+    ],
     "eventKey": "2"
   },
   {
-    "role": "VP Academia",
-    "description": "Manages an undergraduate research opportunity program with civil engineering professors. Increase familiarity and visibility of graduate studies and research to civil engineering at the University of Toronto. Organize an undergraduate and graduate research showcase.",
-    "eventKey": "3"
-  },
-  {
-    "role": "Academics/Logistics Associate",
-    "description": "Supports VP Logistics. Supports VP Professional Development. Engage first-year civil engineering students with CSCE and professional development.",
-    "eventKey": "4"
-  },
-  {
-    "role": "VP Professional Development",
-    "description": "Manage a mentorship program with current undergraduate students with civil engineering alumni. Works alongside the VP External to create events that best serve students’ professional development needs and outreach to civil engineering alumni. Works alongside President to organize a plan for the school year to reach certain milestones for each facet of civil engineering.",
-    "eventKey": "5"
-  },
-  {
-    "role": "Mentorship Associate",
-    "description": "Support the VP Professional Development with organizing the mentorship program with current undergraduate students with civil engineering alumni.",
-    "eventKey": "6"
-  },
-  {
-    "role": "VP Marketing",
-    "description": "Oversees all marketing operations of the chapter (eg. Event Promotion, Facebook, Instagram). Ensures all marketing materials and events (posters, online banners, class announcements, alerts, etc.) are released in a timely manner. Develops and implements a marketing strategy to increase communication and involvement between CSCE and the student body. Manage and maintain a new chapter website including current and archived events, chapter sponsors, etc.",
+    "role": "VP Finance",
+    "description": ["Ensure a balanced budget throughout the school year",
+      "Develop plans to achieve funding from both internal and external legal sources",
+      "Tabulate expenses and revenue as accrued",
+      "Conduct monthly financial reviews where revenues, expenses, and overall budgets are presented"
+    ],
     "eventKey": "7"
   },
   {
-    "role": "Marketing Associate",
-    "description": "Support the VP Marketing by helping with the development of marketing materials (Instagram posts, Facebook event pages, Posters).",
+    "role": "VP Logistics",
+    "description": [
+      "Organizes logistics for events and chapter initiatives (e.g. room bookings, catering, audio/visual equipment)",
+      "Ensures that chapter events are planned in a timely manner and do not conflict with academic schedules of all years of Civil Engineering students",
+      "Manages club assets and rentals (lockers, temporary office spaces, club merchandise)",
+      "Supports President with event planning and other operational tasks"
+    ],
     "eventKey": "8"
   },
   {
-    "role": "VP Community",
-    "description": "Organizes civil-based charity and goodwill events. Generates year-long student initiatives to increase community engagement. Brainstorms and implements fundraising events and opportunities.",
-    "eventKey": "9"
+    "role": "VP Professional Development",
+    "description": [
+      "Work alongside the President(s) to organize a plan for the school year to reach certain milestones for each facet of civil engineering",
+      "Work alongside the External parties to create events that best serve students’ professional development needs",
+      "Foster and maintain a relationship between civil engineering alumni and current students",
+      "Manage a mentorship program with current undergraduate students with civil engineering alumni"
+    ],
+    "eventKey": "11"
   },
   {
-    "role": "Community Associate",
-    "description": "Support the VP Community by organizing civil-based charity and goodwill events to generate year-long student initiatives to increase community engagement. Engage first-year civil engineering students with CSCE and professional development.",
+    "role": " Professional Development Associate",
+    "description": ["Support the VP Professional Development with organizing the mentorship program with current undergraduate students with civil engineering alumni"],
+    "eventKey": "12"
+  },
+  {
+    "role": "VP Marketing",
+    "description": [
+      "Oversees all marketing operations of the chapter (eg. Event Promotion, Facebook, Instagram, Website)", 
+      "Ensures all marketing materials and events (posters, online banners, class announcements, alerts, etc.) are released in a timely manner",
+      "Develops and implements a marketing strategy to increase communication and involvement between CSCE and the student body",
+      "Manage and maintain the chapter website including current and archived events, chapter sponsors, etc."
+     ],
+     "eventKey": "9"
+  },
+  {
+    "role": "Marketing Associate",
+    "description": [
+      "Assist the VP Marketing in overseeing all marketing operations of the chapter (eg. Event Promotion, facebook page, instagram page, and other socials as deemed fit)",
+      "Utilize a marketing strategy to increase communication between CSCE and the student body",
+      "Create graphics and content in alignment with the marketing strategy for upcoming events and initiatives",
+      "Maintain and update the chapter website in alignment with marketing strategy and chapter initiatives",
+      "Promote upcoming events and initiatives through means of online and  in-person channels, including but not limited to hanging up flyers on display boards, making class announcements, speaking at events etc"
+    ],
     "eventKey": "10"
   },
   {
-    "role": "PEY Consultant",
-    "description": "To be added soon.",
-    "eventKey": "11"
+    "role": "VP External Relations",
+    "description": [
+      "Shall be the single point of contact between the club and external organizations/companies",
+      "Seek sponsors for events",
+      "Reach out to other clubs and groups for collaboration(s) and promotion(s) opportunities for the CSCE UofT Chapter"
+    ],
+    "eventKey": "6"
+  },
+  {
+    "role": "VP Community",
+    "description": [
+      "Research goodwill opportunities for chapter outreach to external communities",
+      "Organize fundraising events among the student body",
+      "Generates year-long student initiatives to increase community engagement"
+    ],
+    "eventKey": "3"
+  },
+  {
+    "role": "Community Associate",
+    "description": ["Assist VP Community in researching goodwill opportunities for chapter outreach to external communities",
+      "Assist VP Community in organizing fundraising events among the student body"
+    ],
+    "eventKey": "4"
+  },
+  {
+    "role": "Events Associate",
+    "description": ["Support the VP Community by organizing civil-based charity and goodwill events to generate year-long student initiatives to increase community engagement",
+      "Support the VP Academia by organizing events to raise awareness of research and educational opportunities available to students"
+    ],
+    "eventKey": "5"
+  },
+  {
+    "role": " First Year Representative",
+    "description": [
+      "Assist with marketing events to first years",
+      "Provide a first year perspective on professional development needs",
+      "Assist with event planning according to member’s area of interest"
+    ],
+    "eventKey": "1"
   }
 ]

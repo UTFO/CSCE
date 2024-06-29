@@ -26,14 +26,10 @@ const Join = () => {
               team environment.
             </p>
             <p>
-              <strong>Applications:</strong> We typically recruit for new VPs
-              and associates at the beginning of the school year. Any other
-              recruitments throughout the year will be announced on our
-              Instagram page. If you have any questions or inquiries, please
-              feel free to{' '}
-              <LinkContainer to="/contact">
-                <a>contact us</a>
-              </LinkContainer>
+              <strong>Applications:</strong>We are recruiting right now!{' '}
+              {/* <LinkContainer to="/contact"> */}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRLH-tHixnNKYa-AGqmZB5r13nU5QR6A09Cj4ofFeDPlT0dg/viewform">Apply here!</a>
+              {/* </LinkContainer> */}
               .
             </p>
             {/* <Carousel>

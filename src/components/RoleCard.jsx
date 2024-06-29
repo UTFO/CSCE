@@ -6,7 +6,13 @@ const RoleCard = ({ role, description, eventKey }) => {
   return (
     <Accordion.Item eventKey={eventKey} className="join-info">
       <Accordion.Header className="join-info">{role}</Accordion.Header>
-      <Accordion.Body>{description}</Accordion.Body>
+      <Accordion.Body>
+        <ul>
+          {description.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </Accordion.Body>
     </Accordion.Item>
 
     // <Card>
